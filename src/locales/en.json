@@ -1,0 +1,397 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "about": "About",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "badge": "Creative Digital Agency",
+    "title": "Your partner on the journey ",
+    "title_span": "to the top",
+    "description": "At Agenz, we empower your brand to lead the market and stay ahead of the competition. In a market that never waits, leadership belongs to those who make their presence impossible to ignore.",
+    "cta": "Start Your Journey",
+    "tag_creative": "✦ Creative",
+    "tag_strategic": "✦ Strategic"
+  },
+  "about": {
+    "filter": {
+      "label": "Filter",
+      "all": "All",
+      "medical": "Medical",
+      "pharmacy": "Pharmacy",
+      "interior": "Interior Design",
+      "laptops": "Laptop Companies",
+      "kitchens": "Kitchens",
+      "furniture": "Furniture",
+      "clothes": "Clothing & Abayas",
+      "perfumes": "Perfumes",
+      "other": "Other"
+    },
+    "badge": "AGENZ Journey",
+    "title_1": "A journey",
+    "title_2": "that began with",
+    "title_3": "limitless passion",
+    "desc_1": "Since 2020, we have believed that behind every leading brand is a story worth telling with excellence — and presenting to the market with the professionalism it deserves. Our journey was never simply about delivering technical services; it has always been a deep commitment to innovation that solves real problems and creates success that commands its place at the heart of the market.",
+    "desc_2": "From design to media, marketing to e-commerce, we're here to continue your story and take your brand to the next level.",
+    "cta": "Ready to begin the journey?",
+    "page_badge": "AGENZ Journey",
+    "page_title": "The Story Behind Agenz",
+    "story_bold": "Agenz began its journey in 2020 as a tech-enabled digital marketing agency committed to crafting custom strategies tailored to each client's unique goals.",
+    "story_desc": "We believe in empowering businesses to thrive in a connected world by turning challenges into opportunities. Our approach goes beyond providing a digital facelift; we focus on delivering transformative results that drive measurable growth.",
+    "partners_desc_1": "As certified Shopify Partner, Meta Business Partner, and Google Partner, we leverage industry-leading tools and platforms to propel your brand forward. Our comprehensive solutions encompass e-commerce development, web design, digital advertising, media production, and harnessing the power of social media platforms like Facebook, Instagram, and TikTok.",
+    "partners_desc_2": "At Agenz, every strategy is crafted to align with your vision, helping your business scale new heights and continue its story of success.",
+    "stats_title": "Where Your Story Meets the Future of Digital.",
+    "stats_desc": "Every brand has a story worth telling, and we're here to amplify it. At Agenz, we merge creativity and technology to transform your vision into a powerful digital experience that resonates, engages, and leaves a lasting impact. Let's write the next chapter of your story—together.",
+    "stats_cta": "Check Our Services",
+    "stat_years_label": "Years of experience",
+    "stat_years_desc": "We craft innovative digital solutions that not only elevate your brand but also captivate your audience, creating experiences that inspire and deliver results.",
+    "stat_clients_label": "Clients trust us!",
+    "stat_clients_desc": "We bring your story to life through creative and impactful digital solutions, building connections that leave a lasting impression.",
+    "stat_projects_label": "Project successes",
+    "stat_projects_desc": "We've delivered over 200 successful projects, each one a testament to our commitment to excellence and innovation.",
+    "stat_social_label": "Social Media",
+    "stat_social_desc": "We've delivered over 120 successful social media campaigns, each one a testament to our commitment to excellence and innovation.",
+    "stat_followers_label": "Followers",
+    "stat_followers_desc": "We've built a strong online presence with over 20,000 followers across social platforms.",
+    "cta_badge": "Let's Collaborate",
+    "cta_title_1": "Let us help you write",
+    "cta_title_2": "your next chapter!",
+    "cta_btn": "Contact Us"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Customized services to serve your company's goals.",
+    "description": "At AGENZ, we don't offer isolated services; we design a fully integrated, clear, and organized roadmap where every step drives your goals forward.",
+    "cta": "Discover How We Can Help",
+    "page_badge": "Our Services",
+    "page_title": "Integrated Solutions for Digital & Media Success",
+    "page_description": "Transform your brand with our comprehensive services. We combine strategic digital marketing, expert web development, and high-quality media production to create impactful experiences that resonate with your audience.",
+    "what_we_do_badge": "What We Do",
+    "what_we_do_title": "We develop & create"
+  },
+  "testimonials": {
+    "badge": "Client Reviews",
+    "title": "Our Partners Speak",
+    "title_em": "About Their Experience",
+    "description": "We don't just make promises — we let our partners speak for themselves. Every success story is proof of our commitment to excellence.",
+    "rating_label": "Client rating across all services",
+    "items": {
+      "t1": {
+        "name": "Mohammed Abdullah",
+        "role": "E-commerce Store Owner — Fashion",
+        "quote": "Agenz completely changed my trajectory. Before working with them I was struggling to reach my audience — now my sales have doubled in less than 4 months. Professional team that truly understands the market."
+      },
+      "t2": {
+        "name": "Sara Ramadan",
+        "role": "Marketing Manager — Medical Clinic",
+        "quote": "Working with Agenz was the right decision from day one. They designed our brand identity and managed our campaigns with a very high level of professionalism. They clearly understand the nuances of different industries."
+      },
+      "t3": {
+        "name": "Nader Hassan",
+        "role": "Founder — Tech Company",
+        "quote": "The website they built for us is a masterpiece. Not just beautiful — it visibly converts visitors into customers. And the support team is responsive at any time, no exceptions."
+      }
+    }
+  },
+  "stats": {
+    "title": "Designing the Next Page",
+    "title_em": "of Your Journey.",
+    "people_label": "Creative partner",
+    "projects_label": "Successful projects",
+    "brands_label": "Partners in success",
+    "cta": "Let's start our partnership."
+  },
+  "creative": {
+    "badge": "Creative Approach",
+    "title_1": "We develop & create",
+    "title_2": "digital future.",
+    "description": "At Agenz, we believe every business has a unique story. Our creative approach is designed to continue your narrative by crafting innovative strategies, compelling branding, and digital solutions that not only meet your needs but also inspire and transform your brand's journey.",
+    "collage_idea": "Idea",
+    "quote_badge": "What We Do",
+    "quote": "We craft strategies that empower brands to grow, thrive, and make an impact in their digital journeys.",
+    "quote_word": "Grow",
+    "founder_name": "Mahmoud Mouawad",
+    "founder_title": "Founder & CEO"
+  },
+  "cta_band": {
+    "badge": "Let's Continue Your Story",
+    "title_1": "Ready to Write the Next",
+    "title_2": "Chapter of Your Success?",
+    "cta": "Contact Us"
+  },
+  "contact": {
+    "badge": "Have a Project?",
+    "title_1": "Ready to grow in your field",
+    "title_2": "with the right marketing!",
+    "description": "We're passionate about transforming ideas into impactful digital experiences. Whether you have a project or simply want to discuss how we can collaborate — we're here.",
+    "form_badge": "✦ Get In Touch",
+    "form_title": "Send Us a Message",
+    "field_name": "Full Name",
+    "field_name_placeholder": "John Doe",
+    "field_email": "Email",
+    "field_email_placeholder": "hello@email.com",
+    "field_phone": "Phone",
+    "field_phone_placeholder": "+20 1xx xxx xxxx",
+    "field_service": "Service",
+    "field_service_placeholder": "Select service…",
+    "service_web": "Web Development",
+    "service_branding": "Branding & Identity",
+    "service_seo": "SEO & Marketing",
+    "service_social": "Social Media",
+    "service_other": "Other",
+    "field_message": "Message",
+    "field_message_placeholder": "Tell us about your project…",
+    "submit": "Send Message →",
+    "sending": "Sending..",
+    "error": "Error, Try again.",
+    "success_title": "Message Sent!",
+    "success_desc": "We'll get back to you shortly.",
+    "office_label": "Egypt Office",
+    "office_value": "Kafr El Sheikh, Governorate Towers, Tower 11B - Plaza Tower, First Floor",
+    "mail_label": "Mail Us",
+    "phone_label": "EG Phone",
+    "quote": "\"We continue your story.\"",
+    "quote_sub": "Next Chapter Begins ✦"
+  },
+  "portfolio": {
+      "filter_hint_start": "Select a category to begin",
+  "filter_hint_campaign": "Select a campaign above",
+  "no_images": "No images found",
+  "no_videos": "No videos found",
+  "no_files": "No files found",
+    "badge": "Our Work",
+    "title": "Stories We've Helped",
+    "work_title": "Some Of Our Work",
+    "title_span": "Bring to Life",
+    "description": "Reels, posts, branding, web — each project tells a unique story.",
+    "section_photos": "🖼 Photos",
+    "section_videos": "▶ Videos",
+    "section_branding": "Branding",
+    "posts_count": "posts",
+    "pdf_count": "files",
+    "videos_count": "videos",
+    "cta_badge": "Let's Collaborate",
+    "cta_title_1": "Ready to start your",
+    "cta_title_2": "next chapter?",
+    "cta": "Contact Us",
+    "filter": {
+      "all": "All",
+      "branding": "Branding",
+      "sales": "Sales",
+      "engagement": "Engagement",
+      "awareness": "Awareness",
+      "motion": "motion",
+      "reels": "reels",
+      "teaser": "teaser",
+      "ugc": "ugc",
+      "podcast": "podcast",
+      "voice_over": "Voice Over",
+      "bromo": "bromo"
+    },
+    "brands": {
+      "line_wear": "Line Wear Store",
+      "salasil_alhudaa": "Salasil Alhudaa",
+      "dr_ahmed_essam_zidan": "Dr. Ahmed Essam Zidan",
+      "dr_hussain_abo_saleh": "Dr. Hussain Abo Saleh",
+      "tz_technology_zone": "TZ-Technology Zone",
+      "dr_mohamed_wasef_aglan": "Dr. Mohamed Wasef Aglan",
+      "tiba_new_house": "TIBA New House",
+      "elgebaly_pharmacy": "Elgebaly Pharmacy",
+      "el_aamal_exhibition": "el-Aamal Exhibition",
+      "golden_tech": "Golden Tech",
+      "flash_tech": "Flash Tech"
+    },
+    "cancel": "✕ Cancel",
+    "media_count": "{{images}} photos · {{videos}} videos"
+  },
+  "service_cta_badge": "Ready to grow?",
+  "service_cta_btn": "Contact Us",
+  "ecommerce": {
+    "title": "E-commerce Solutions",
+    "description": "We are a leading E-Commerce web development company crafting high-functioning websites for the ultimate online shopping experience. Our services include a full-fledged online store web design, managing the backend & driving sales. The goal is to transform your business to a multichannel, data-driven environment.",
+    "project_note": "Project: Nour Juicr",
+    "services_label": "Our E-commerce Services Include:",
+    "services_list": [
+      "Online Store Design & Development: Crafting visually stunning, user-friendly online stores tailored to your brand.",
+      "Platform Optimization: Ensuring your store is optimized for performance, speed, and customer satisfaction.",
+      "Social Media Integration: Connecting your online store to platforms like Facebook, Instagram, and TikTok for seamless shopping experiences.",
+      "Digital Media Buying: Strategically placing ads to maximize reach and return on investment.",
+      "Conversion Rate Optimization: Turning visitors into loyal customers with data-driven strategies.",
+      "Maintenance & Support: Providing ongoing technical support and updates to keep your store running smoothly."
+    ],
+    "features": [
+      "Comprehensive analysis of the current situation.",
+      "Clear marketing strategy.",
+      "Monthly content plan",
+      "Professional post designs",
+      "Engagement and response management"
+    ],
+    "cta_title": "Let's build your store"
+  },
+  "social_media": {
+    "title": "Social Media Marketing",
+    "intro": "Social media is more than just a platform—it's where your brand builds connections, fosters engagement, and drives growth. At Agenz, we specialize in crafting tailored strategies that amplify your voice, resonate with your audience, and deliver measurable results.",
+    "paragraphs": [
+      "From visually stunning content to meaningful interactions, we ensure your social presence reflects your brand's unique story.",
+      "Our services go beyond posting—we focus on building authentic relationships with your audience through active community engagement.",
+      "With our analytics-driven approach, you'll gain a clear understanding of what works."
+    ],
+    "features": [
+      "Meta Ads | Facebook & Instagram",
+      "Google Ads",
+      "TikTok Ads",
+      "Smart Retargeting"
+    ],
+    "cta_title": "Let's elevate your presence"
+  },
+  "web_design": {
+    "title": "Web Design & Development",
+    "intro": "In today's competitive and ever-evolving digital landscape, a well-designed website isn't just an option—it's a necessity.",
+    "project_note": "Project: Butterfly Tex",
+    "body_paragraphs": [
+      "At the heart of our approach is a commitment to excellence.",
+      "From understanding your unique goals to implementing tailored solutions, we work collaboratively.",
+      "We believe that great web design is not just about visuals—it's about creating seamless experiences."
+    ],
+    "services_label": "Our Web Design & Development Services Include:",
+    "services_list": [
+      "Custom Website Design: Unique, brand-aligned designs built from scratch to reflect your identity.",
+      "Responsive Development: Pixel-perfect, mobile-first development that works on all screen sizes.",
+      "UI/UX Optimization: User-centered design that maximizes engagement and conversion rates.",
+      "CMS Integration: Easy-to-manage content systems like WordPress, Webflow, or custom solutions.",
+      "Performance & SEO: Fast-loading, SEO-ready websites built to rank and retain visitors.",
+      "Ongoing Support & Maintenance: Reliable technical support to keep your site running at its best."
+    ],
+    "features": [
+      "Custom Website Design",
+      "Responsive Development",
+      "UI/UX Optimization",
+      "CMS Integration",
+      "Performance & SEO",
+      "Ongoing Support & Maintenance"
+    ],
+    "cta_title": "Let's build your website"
+  },
+  "media_buying": {
+    "title": "Digital Media Buying",
+    "paragraphs": [
+      "In a world overflowing with content, standing out requires more than just great ideas—it demands smart strategies and precision targeting.",
+      "Our data-driven approach combines creativity with analytics to craft campaigns that deliver measurable results."
+    ],
+    "services_label": "Our Media Buying Services:",
+    "services_list": [
+      "Strategic Campaign Planning: Tailored ad strategies that align with your business objectives.",
+      "Platform Expertise: Leveraging platforms like Facebook, Instagram, TikTok, and Google.",
+      "Creative Ad Design: Engaging visuals and copy designed to captivate and convert.",
+      "Performance Tracking & Optimization: Continuous monitoring and refinement to maximize ROI.",
+      "Budget Management: Ensuring every dollar spent delivers maximum value."
+    ],
+    "features": [
+      "Daily data analysis",
+      "A/B testing",
+      "Conversion rate optimization",
+      "Monthly reports"
+    ],
+    "closing_paragraphs": [
+      "At Agenz, we believe in transparency, innovation, and results.",
+      "Ready to amplify your reach? Let's create a media strategy that delivers success."
+    ],
+    "cta_title": "Let's amplify your reach"
+  },
+  "branding": {
+    "title": "Branding",
+    "paragraphs": [
+      "Your brand is more than just a logo—it's the heart of your identity, the voice that speaks to your audience, and the experience that sets you apart.",
+      "We believe every brand has a story worth telling, and our mission is to ensure yours is unforgettable."
+    ],
+    "services_label": "Our Branding Services Include:",
+    "services_list": [
+      "Logo Design & Development: Designing logos that embody your brand's personality and purpose.",
+      "Comprehensive Brand Identity: Creating a seamless visual and verbal identity.",
+      "Brand Guidelines: Establishing a rulebook for consistency across every touchpoint.",
+      "Strategic Branding Direction: Providing actionable insights and strategies.",
+      "Promotional Branding Materials: Designing impactful business cards, brochures, and marketing collateral.",
+      "Digital & Physical Applications: Ensuring your brand looks exceptional everywhere."
+    ],
+    "features": [
+      "Logo Design & Development",
+      "Comprehensive Brand Identity",
+      "Brand Guidelines",
+      "Strategic Branding Direction",
+      "Promotional Branding Materials",
+      "Digital & Physical Applications"
+    ],
+    "closing_paragraphs": [
+      "At Agenz, branding isn't just what we do—it's how we empower businesses to connect with their audiences.",
+      "Ready to bring your brand to life? Let's create something extraordinary, together."
+    ],
+    "cta_title": "Let's build your brand"
+  },
+  "media_production": {
+    "title": "Media Production",
+    "paragraphs": [
+      "In a world where attention is the most valuable currency, powerful media can make all the difference.",
+      "From the lens of a camera to the magic of post-production, our team crafts high-quality content designed to engage, inspire, and drive results."
+    ],
+    "services_label": "Our Media Production Services:",
+    "services_list": [
+      "Photography: Capture the soul of your brand through stunning imagery.",
+      "Videography: Tell your story with cinematic videos that inspire and engage.",
+      "Motion Graphics: Bring your ideas to life with dynamic animations.",
+      "Strategic Content Planning: Create cohesive media campaigns that align with your goals.",
+      "Post-Production Excellence: Refine every frame and deliver polished content."
+    ],
+    "features": [
+      "Photography",
+      "Videography",
+      "Motion Graphics",
+      "Strategic Content Planning",
+      "Post-Production Excellence"
+    ],
+    "closing_paragraphs": [
+      "With Agenz, media production isn't just about creating visuals—it's about creating experiences.",
+      "Ready to captivate your audience? Let's create media that makes an impact."
+    ],
+    "cta_title": "Let's create your media"
+  },
+  "partners": {
+    "badge": "Official Partners",
+    "title": "Certified by the World's Biggest Platforms",
+    "description": "We work as official partners with the most powerful digital platforms in the world to guarantee you the best results and latest tools.",
+    "featured_label": "Featured",
+    "trust_text": "✦ Officially Certified Partners in Egypt & the Middle East",
+    "items": {
+      "shopify": {
+        "name": "Shopify",
+        "badge": "Shopify Partner",
+        "desc": "We build professional e-commerce stores on Shopify with certified expertise, managing everything from design to driving sales."
+      },
+      "meta": {
+        "name": "Meta Business",
+        "badge": "Meta Business Partner",
+        "desc": "As certified Meta partners, we launch precision-targeted ad campaigns on Facebook and Instagram with maximum efficiency."
+      },
+      "google": {
+        "name": "Google",
+        "badge": "Google Partner",
+        "desc": "We leverage the full Google ecosystem — from Ads to Analytics — to connect your brand with the right audience at the right time."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "We continue your story",
+    "office_title": "Office",
+    "office_country": "Egypt —",
+    "office_address": "Kafr El Sheikh, Governorate Towers, Tower 11B - Plaza Tower, First Floor",
+    "links_title": "Quick Links",
+    "link_contact": "Contact Us",
+    "link_services": "Services",
+    "link_about": "About Us",
+    "touch_title": "Keep in Touch",
+    "copyright": "© 2025 Agenz. All rights reserved.",
+    "made_by": "Created with ❤️ by Agenz"
+  }
+}
