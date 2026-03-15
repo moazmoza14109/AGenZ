@@ -373,24 +373,14 @@ export default function ContactPage() {
             <div className="flex text-center items-center justify-center py-5 text-base-content/40 text-sm">
               or
             </div>
-            <div className="flex flex-col gap-2">
               <a
                 target="_blank"
                 dir="ltr"
                 href="https://wa.me/+201060318598"
-                className="btn font-medium flex items-center justify-center gap-2"
+                className="btn font-medium flex items-center justify-center bg-[#25D366] hover:bg-[#1ebe5d] rounded"
               >
-                010 603 185 98 <sub>WhatsApp</sub>
+                WhatsApp
               </a>
-              <a
-                target="_blank"
-                dir="ltr"
-                href="https://wa.me/+201551985963"
-                className="btn font-medium flex items-center justify-center gap-2"
-              >
-                015 519 859 63 <sub>WhatsApp</sub>
-              </a>
-            </div>
           </div>
 
           {/* ── Info cards ── */}

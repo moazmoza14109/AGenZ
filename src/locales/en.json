@@ -48,7 +48,7 @@
     "stats_cta": "Check Our Services",
     "stat_years_label": "Years of experience",
     "stat_years_desc": "We craft innovative digital solutions that not only elevate your brand but also captivate your audience, creating experiences that inspire and deliver results.",
-    "stat_clients_label": "Clients trust us!",
+    "stat_clients_label": "current Clients!",
     "stat_clients_desc": "We bring your story to life through creative and impactful digital solutions, building connections that leave a lasting impression.",
     "stat_projects_label": "Project successes",
     "stat_projects_desc": "We've delivered over 200 successful projects, each one a testament to our commitment to excellence and innovation.",
@@ -163,9 +163,8 @@
   "no_videos": "No videos found",
   "no_files": "No files found",
     "badge": "Our Work",
-    "title": "Stories We've Helped",
+    "title": "Stories We've Helped Bring to Life",
     "work_title": "Some Of Our Work",
-    "title_span": "Bring to Life",
     "description": "Reels, posts, branding, web — each project tells a unique story.",
     "section_photos": "🖼 Photos",
     "section_videos": "▶ Videos",
@@ -378,20 +377,24 @@
         "name": "Google",
         "badge": "Google Partner",
         "desc": "We leverage the full Google ecosystem — from Ads to Analytics — to connect your brand with the right audience at the right time."
-      }
+      },
+      "tiktok": {
+  "name": "TikTok",
+  "badge": "TikTok Partner",
+  "desc": "We create engaging content and targeted ad campaigns on TikTok that reach millions and drive authentic engagement with your audience."
+}
     }
   },
   "footer": {
     "tagline": "We continue your story",
     "office_title": "Office",
-    "office_country": "Egypt —",
+    "office_country": "Egypt",
     "office_address": "Kafr El Sheikh, Governorate Towers, Tower 11B - Plaza Tower, First Floor",
     "links_title": "Quick Links",
     "link_contact": "Contact Us",
     "link_services": "Services",
     "link_about": "About Us",
     "touch_title": "Keep in Touch",
-    "copyright": "© 2025 Agenz. All rights reserved.",
-    "made_by": "Created with ❤️ by Agenz"
+    "copyright": "© 2026 Agenz. All rights reserved."
   }
 }

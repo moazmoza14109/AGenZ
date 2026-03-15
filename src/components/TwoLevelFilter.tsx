@@ -69,7 +69,27 @@ const activeSlogans = activeBrandData?.slogans?.[activeCategory!] ?? [];
 
       {/* ── Level 1: Categories ── */}
       <div className="flex flex-wrap gap-3 mb-5">
-
+<button
+  onClick={() => { onCategoryChange(null); onBrandChange(null); }}
+  className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300"
+  style={{
+    background: activeCategory === null
+      ? `linear-gradient(135deg, #6d28d9, #3F0F8B)`
+      : isDark ? "rgba(255,255,255,0.06)" : "#f3f4f6",
+    color: activeCategory === null ? "#fff" : isDark ? "#c4b5fd" : "#6b7280",
+    boxShadow: activeCategory === null ? `0 4px 20px ${isDark ? "rgba(124,58,237,0.4)" : "rgba(63,15,139,0.25)"}` : "none",
+    border: activeCategory === null ? "none" : isDark ? "1px solid rgba(167,139,250,0.2)" : "1px solid #e5e7eb",
+    transform: activeCategory === null ? "scale(1.05)" : "scale(1)",
+  }}
+>
+  <svg viewBox="0 0 24 24" fill="none"
+    stroke={activeCategory === null ? "#fff" : isDark ? "#c4b5fd" : "#9ca3af"}
+    strokeWidth={2} className="w-4 h-4">
+    <path strokeLinecap="round" strokeLinejoin="round"
+      d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+  </svg>
+  {t("portfolio.filter.all")}
+</button>
         {CATEGORIES.map((cat) => {
           const isActive = activeCategory === cat.id;
           const c = catColor[cat.id];
@@ -108,6 +128,36 @@ const activeSlogans = activeBrandData?.slogans?.[activeCategory!] ?? [];
             animation: "fadeSlideIn 0.35s ease",
           }}
         >
+            
+  {/* All Brand Button */}
+<button
+  onClick={() => onBrandChange(null)}
+  className="flex flex-col items-center gap-1.5"
+>
+  <div
+    className="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300"
+    style={{
+      background: activeBrand === null
+        ? `linear-gradient(135deg, ${catColor[activeCategory]}, ${catColor[activeCategory]}cc)`
+        : isDark ? "rgba(255,255,255,0.07)" : "#f3f4f6",
+      border: activeBrand === null ? "2.5px solid transparent"
+        : isDark ? "2.5px solid rgba(167,139,250,0.2)" : "2.5px solid #e5e7eb",
+      boxShadow: activeBrand === null ? `0 4px 18px ${catColor[activeCategory]}55` : "none",
+      transform: activeBrand === null ? "scale(1.1)" : "scale(1)",
+    }}
+  >
+    <svg viewBox="0 0 24 24" fill="none"
+      stroke={activeBrand === null ? "#fff" : isDark ? "#c4b5fd" : "#9ca3af"}
+      strokeWidth={2} className="w-5 h-5">
+      <path strokeLinecap="round" strokeLinejoin="round"
+        d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+    </svg>
+  </div>
+  <span className="text-xs font-semibold"
+    style={{ color: activeBrand === null ? catColor[activeCategory] : isDark ? "rgba(255,255,255,0.35)" : "#9ca3af" }}>
+    {t("portfolio.filter.all")}
+  </span>
+</button>
           {/* Brand buttons */}
           {visibleBrands.map((brand) => {
             const isActive = activeBrand === brand.id;
@@ -151,7 +201,21 @@ const activeSlogans = activeBrandData?.slogans?.[activeCategory!] ?? [];
 
       {/* ── Level 3: Slogans Row ── */}
        {activeSlogans.length > 0 && (
-  <div className="flex flex-wrap gap-2 pt-2 pb-1 px-1">
+      <div className="flex flex-wrap gap-2 pt-2 pb-1 px-1">
+          {/* All Slogan Button */}
+  <button
+    onClick={() => onSloganChange(null)}
+    className="px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-200 border"
+    style={{
+      background: activeSlogan === null ? (isDark ? "#7c3aed" : "#3F0F8B") : isDark ? "rgba(167,139,250,0.08)" : "#f5f3ff",
+      color: activeSlogan === null ? "#fff" : isDark ? "#c4b5fd" : "#3F0F8B",
+      borderColor: activeSlogan === null ? "transparent" : isDark ? "rgba(167,139,250,0.2)" : "#ddd6fe",
+      transform: activeSlogan === null ? "scale(1.05)" : "scale(1)",
+    }}
+  >
+    {t("portfolio.filter.all")}
+  </button>
+
     {activeSlogans.map((slogan) => {
       const isActive = activeSlogan === slogan;
       return (
@@ -176,8 +240,8 @@ const activeSlogans = activeBrandData?.slogans?.[activeCategory!] ?? [];
         </button>
       );
     })}
-  </div>
-)}
+       </div>
+      )}
 
       <style>{`@keyframes fadeSlideIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
     </div>

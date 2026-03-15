@@ -356,8 +356,9 @@ export default function AboutPage() {
                 {t("about.cta_title_2")}
               </h3>
             </div>
-            <Link
-              to="/contact"
+            <a
+          target="_blank"
+            href="https://wa.me/+201060318598"
               className="flex-shrink-0 text-white text-sm font-bold tracking-wide px-10 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 whitespace-nowrap"
               style={{
                 background: isDark
@@ -366,7 +367,7 @@ export default function AboutPage() {
               }}
             >
               {t("about.cta_btn")}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

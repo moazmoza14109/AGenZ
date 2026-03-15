@@ -16,37 +16,24 @@ const ShopifyLogo = ({ active }: { active: boolean }) => (
     />
   </svg>
 );
-
 const MetaLogo = ({ active }: { active: boolean }) => (
-  <svg
-    viewBox="0 0 60 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-14 h-7"
-  >
-    <path
-      d="M3 22.5C3 25.5 4.7 27.5 7.2 27.5C9.1 27.5 10.5 26.5 12.2 24C13.7 26 15.3 27.5 17.8 27.5C22 27.5 24.5 23.8 24.5 18.5C24.5 14.8 22.8 12.5 20.3 12.5C18.5 12.5 17 13.8 15.5 16.5C14.5 14.3 13 12.5 10.5 12.5C7 12.5 3 17 3 22.5Z"
-      fill={active ? "#fff" : "rgba(255,255,255,0.4)"}
-      style={{ transition: "fill 0.4s" }}
-    />
-    <path
-      d="M28 14C28 11.8 29.2 10.5 31 10.5C32.8 10.5 34 11.8 34 14V20.5C34 23.5 35.5 25.5 38 25.5C40.5 25.5 42 23 42 19.5V14C42 11.8 43.2 10.5 45 10.5C46.8 10.5 48 11.8 48 14V25H42V23C40.8 24.8 39 25.8 36.5 25.8C32.2 25.8 28 22.5 28 17V14Z"
-      fill={active ? "#fff" : "rgba(255,255,255,0.4)"}
-      style={{ transition: "fill 0.4s" }}
-    />
-    <text
-      x="50"
-      y="22"
-      fontSize="11"
-      fontWeight="800"
-      fill={active ? "#fff" : "rgba(255,255,255,0.4)"}
-      style={{ transition: "fill 0.4s", fontFamily: "sans-serif" }}
-    >
-      meta
-    </text>
+  <img
+    src={"../assets/meta-logo.png.png"}
+    alt="Meta"
+    className="w-14 h-8 object-contain"
+    style={{
+      opacity: active ? 1 : 0.4,
+      transition: "opacity 0.4s",
+      filter: active ? "none" : "grayscale(1) brightness(2)",
+    }}
+  />
+);
+const TikTokLogo = ({ active }: { active: boolean }) => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"
+      fill={active ? "#fff" : "rgba(255,255,255,0.4)"} style={{ transition: "fill 0.4s" }} />
   </svg>
 );
-
 const GoogleLogo = ({ active }: { active: boolean }) => (
   <svg
     viewBox="0 0 46 46"
@@ -78,28 +65,10 @@ const GoogleLogo = ({ active }: { active: boolean }) => (
 );
 
 const PARTNERS = [
-  {
-    key: "shopify",
-    Logo: ShopifyLogo,
-    number: "01",
-    accentColor: "#96BF48",
-    accentGlow: "rgba(150,191,72,0.25)",
-  },
-  {
-    key: "meta",
-    Logo: MetaLogo,
-    number: "02",
-    accentColor: "#0082FB",
-    accentGlow: "rgba(0,130,251,0.25)",
-  },
-  {
-    key: "google",
-    Logo: GoogleLogo,
-    number: "03",
-    accentColor: "#EA4335",
-    accentGlow: "rgba(234,67,53,0.2)",
-  },
-];
+  { key: "shopify", Logo: ShopifyLogo, number: "01", accentColor: "#96BF48", accentGlow: "rgba(150,191,72,0.25)" },
+  { key: "meta",    Logo: MetaLogo,    number: "02", accentColor: "#0081FB", accentGlow: "rgba(0,129,251,0.25)" },
+  { key: "google",  Logo: GoogleLogo,  number: "03", accentColor: "#EA4335", accentGlow: "rgba(234,67,53,0.2)"  },
+{ key: "tiktok", Logo: TikTokLogo, number: "04", accentColor: "#69C9D0", accentGlow: "rgba(105,201,208,0.2)" },];;
 
 export default function PartnersSection() {
   const { t } = useTranslation();

@@ -194,7 +194,12 @@ function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/25 text-xs">{t("footer.copyright")}</p>
-          <p className="text-white/25 text-xs">{t("footer.made_by")}</p>
+          <div className="text-white/25 text-xs">
+              Created with ❤️ by {" "}
+              <a className="underline" href="https://www.facebook.com/agenzmarketingagency" target="_blank">
+                Agenz
+              </a>
+            </div>
         </div>
       </div>
     </footer>

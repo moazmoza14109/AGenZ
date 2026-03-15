@@ -48,9 +48,9 @@
     "stats_cta": "استعرض خدماتنا",
     "stat_years_label": "سنوات من الخبرة",
     "stat_years_desc": "نصنع حلولاً رقمية مبتكرة ترفع علامتك التجارية وتأسر جمهورك، وتخلق تجارب تُلهم وتحقق نتائج.",
-    "stat_clients_label": "عملاء يثقون بنا!",
+    "stat_clients_label": "عميل حالي!",
     "stat_clients_desc": "نحيي قصتك من خلال حلول رقمية إبداعية ومؤثرة، ونبني علاقات تترك انطباعًا دائمًا.",
-    "stat_projects_label": "مشروع ناجح",
+    "stat_projects_label": "شريك ناجح",
     "stat_projects_desc": "أنجزنا أكثر من 200 مشروع ناجح، كل منها شاهد على التزامنا بالتميز والابتكار.",
     "stat_social_label": "وسائل التواصل الاجتماعي",
     "stat_social_desc": "نفّذنا أكثر من 120 حملة ناجحة على وسائل التواصل الاجتماعي، كل منها يعكس التزامنا بالتميز والابتكار.",
@@ -178,9 +178,8 @@
   "no_videos": "لا توجد فيديوهات",
   "no_files": "لا توجد ملفات",
     "badge": "أعمالنا",
-    "title": "قصص ساعدنا في",
+    "title": "قصص ساعدنا في إحيائها",
     "work_title": "بعض من أعمالنا",
-    "title_span": "إحيائها",
     "description": "ريلز، منشورات، هوية بصرية، ويب — كل مشروع يحكي قصة فريدة.",
     "section_photos": "🖼 الصور",
     "section_videos": "▶ الفيديوهات",
@@ -395,20 +394,24 @@
         "name": "Google",
         "badge": "Google Partner",
         "desc": "نستخدم منظومة Google الكاملة من Ads إلى Analytics لنوصل براندك للجمهور الصح في الوقت الصح."
-      }
+      },
+      "tiktok": {
+  "name": "TikTok",
+  "badge": "TikTok Partner",
+  "desc": "ننشئ محتوى إبداعي وحملات إعلانية مستهدفة على TikTok تصل لملايين المستخدمين وتحقق تفاعلاً حقيقياً مع جمهورك."
+}
     }
   },
   "footer": {
     "tagline": "نكمل قصتك",
     "office_title": "المكتب",
-    "office_country": "مصر —",
+    "office_country": "مصر",
     "office_address": "كفر الشيخ ابراج المحافظه برج 11ب - بلازا تاور الدور الأول",
     "links_title": "روابط سريعة",
     "link_contact": "تواصل معنا",
     "link_services": "الخدمات",
     "link_about": "من نحن",
     "touch_title": "تواصل معنا",
-    "copyright": "© 2025 Agenz. All rights reserved.",
-    "made_by": "Created with ❤️ by Agenz"
+    "copyright": "© 2026 Agenz. All rights reserved."
   }
 }

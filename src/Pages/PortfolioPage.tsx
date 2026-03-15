@@ -59,19 +59,18 @@ const [activeSloganImages, setActiveSloganImages] = useState<string | null>(null
 
   // Filtered data
 const filteredImages = (() => {
-  if (!activeCategoryImages) return [];
+  if (!activeCategoryImages) return IMAGES;
 
   let result = IMAGES.filter(img => img.category === activeCategoryImages);
 
-  if (!activeBrandImages) return []; // ← لازم تختار براند الأول
+  if (!activeBrandImages) return result; // كاتيجوري بس → كل صورها
 
   result = result.filter(img => img.brandId === activeBrandImages);
 
   const activeBrandData = BRANDS.find(b => b.id === activeBrandImages);
   const hasSlogans = activeBrandData?.slogans?.[activeCategoryImages]?.length ?? 0;
 
-  if (hasSlogans > 0) {
-    if (!activeSloganImages) return [];
+  if (hasSlogans > 0 && activeSloganImages) {
     result = result.filter(img => img.slogan === activeSloganImages);
   }
 
@@ -89,7 +88,7 @@ const handleBrandChange = (brand: string | null) => {
 
 const filteredVideos = activeVidCategory
   ? VIDEOS.filter((v) => v.category === activeVidCategory)
-  : [];
+  : VIDEOS; // ← مش [] عشان All بيعرض الكل
   // Branding tab derived data — الصور من BRANDING_IMAGES في data.ts مباشرة
   const brandingBrandIds = [
     ...new Set(BRANDING_IMAGES.map((img) => img.brandId)),
@@ -204,13 +203,10 @@ const filteredVideos = activeVidCategory
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <h1
-              className="text-4xl sm:text-5xl font-bold leading-tight max-w-lg transition-colors duration-300"
+              className="text-3xl sm:text-4xl font-bold leading-tight max-w-lg transition-colors duration-300"
               style={{ color: brandPrimary }}
             >
               {t("portfolio.title")}{" "}
-              <span style={{ color: brandSecondary }}>
-                {t("portfolio.title_span")}
-              </span>
             </h1>
             <p className="text-base-content/50 text-sm leading-relaxed max-w-xs">
               {t("portfolio.description")}
@@ -549,8 +545,9 @@ const filteredVideos = activeVidCategory
               {t("portfolio.cta_title_2")}
             </h3>
           </div>
-          <Link
-            to="/contact"
+          <a
+          target="_blank"
+            href="https://wa.me/+201060318598"
             className="flex-shrink-0 text-white text-sm font-bold tracking-wide px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl whitespace-nowrap"
             style={{
               background: isDark
@@ -559,7 +556,7 @@ const filteredVideos = activeVidCategory
             }}
           >
             {t("portfolio.cta")}
-          </Link>
+          </a>
         </div>
       </div>
 
