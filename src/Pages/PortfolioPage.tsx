@@ -9,7 +9,6 @@ import {
   type VidCategory,
 } from "../data/data";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
 import { useTheme } from "../context/ThemeContext";
 import VideoCard from "../components/VideoCard";
 import ImageLightbox from "../components/ImageLightbox";
