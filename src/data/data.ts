@@ -11,7 +11,7 @@ export interface ImageItem {
   aspect: "square" | "reel" | "landscape";
   brandId: string;
   category: "branding" | "sales" | "engagement" | "awareness";
-    slogan?: string;
+  slogan?: string;
 }
 
 export interface VideoItem {
@@ -88,7 +88,11 @@ export const BRANDS: BrandItem[] = [
     category: ["awareness", "engagement"],
     slogans: {
       awareness: ["العشر وصايا"],
-      engagement: ["سنة جديدة تحدي جديد", "استشارة في السريع", "معانا ولا علينا"],
+      engagement: [
+        "سنة جديدة تحدي جديد",
+        "استشارة في السريع",
+        "معانا ولا علينا",
+      ],
     },
   },
   {
@@ -167,15 +171,13 @@ export const BRANDS: BrandItem[] = [
 //  IMAGES  ← ✏️ أضف/عدّل brandId لكل صورة
 // ─────────────────────────────────────
 export const IMAGES: ImageItem[] = [
-
   {
     id: 2,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773591986/%D9%85%D8%A7_%D9%88%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D8%AA%D9%82%D9%88%D9%8A%D9%85_1_zmocku.jpg",
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
-
+    slogan: "ما وراء التقويم",
   },
   {
     id: 12,
@@ -239,7 +241,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "awareness",
-    slogan: "حالة خطر"
+    slogan: "حالة خطر",
   },
   {
     id: 21,
@@ -247,7 +249,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "awareness",
-    slogan: "حالة خطر"
+    slogan: "حالة خطر",
   },
   {
     id: 22,
@@ -255,7 +257,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "awareness",
-    slogan: "خط أحمر"
+    slogan: "خط أحمر",
   },
   {
     id: 23,
@@ -263,7 +265,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "awareness",
-    slogan: "خط أحمر"
+    slogan: "خط أحمر",
   },
   {
     id: 24,
@@ -271,7 +273,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 25,
@@ -279,7 +281,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 26,
@@ -287,7 +289,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 27,
@@ -295,7 +297,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 28,
@@ -303,7 +305,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 29,
@@ -311,7 +313,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 30,
@@ -319,7 +321,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 31,
@@ -327,7 +329,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 32,
@@ -335,7 +337,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 33,
@@ -343,7 +345,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "awareness",
-    slogan: "العشر وصايا"
+    slogan: "العشر وصايا",
   },
   {
     id: 34,
@@ -477,7 +479,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 53,
@@ -485,7 +487,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 54,
@@ -493,7 +495,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 55,
@@ -501,7 +503,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 56,
@@ -509,7 +511,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 57,
@@ -517,7 +519,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-mohamed-wasef-aglan",
     category: "awareness",
-    slogan: "ما وراء التقويم"
+    slogan: "ما وراء التقويم",
   },
   {
     id: 58,
@@ -525,7 +527,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "tiba-new-house",
     category: "awareness",
-    slogan: "شطب صح"
+    slogan: "شطب صح",
   },
   {
     id: 59,
@@ -533,7 +535,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "tiba-new-house",
     category: "awareness",
-    slogan: "شطب صح"
+    slogan: "شطب صح",
   },
   {
     id: 60,
@@ -541,7 +543,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "tiba-new-house",
     category: "awareness",
-    slogan: "شطب صح"
+    slogan: "شطب صح",
   },
   {
     id: 61,
@@ -549,8 +551,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "awareness",
-    slogan: "بينهم كيميا"
-    
+    slogan: "بينهم كيميا",
   },
   {
     id: 62,
@@ -558,7 +559,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 63,
@@ -566,7 +567,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 64,
@@ -574,7 +575,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 65,
@@ -582,7 +583,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 66,
@@ -590,7 +591,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 67,
@@ -598,7 +599,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 68,
@@ -606,7 +607,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 69,
@@ -614,7 +615,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-ahmed-essam-zidan",
     category: "sales",
-    slogan: "حكايات من العيادة"  
+    slogan: "حكايات من العيادة",
   },
   {
     id: 70,
@@ -636,7 +637,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "awareness",
-    slogan: "بينهم كيميا"
+    slogan: "بينهم كيميا",
   },
   {
     id: 73,
@@ -644,7 +645,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "awareness",
-    slogan: "بينهم كيميا"
+    slogan: "بينهم كيميا",
   },
   {
     id: 74,
@@ -652,7 +653,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "بضمان الجبالي"
+    slogan: "بضمان الجبالي",
   },
   {
     id: 75,
@@ -660,7 +661,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "منور بعروضنا"
+    slogan: "منور بعروضنا",
   },
   {
     id: 76,
@@ -668,7 +669,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "بضمان الجبالي"
+    slogan: "بضمان الجبالي",
   },
   {
     id: 77,
@@ -676,7 +677,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "بضمان الجبالي"
+    slogan: "بضمان الجبالي",
   },
   {
     id: 78,
@@ -684,7 +685,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "بضمان الجبالي"
+    slogan: "بضمان الجبالي",
   },
   {
     id: 79,
@@ -692,7 +693,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "بضمان الجبالي"
+    slogan: "بضمان الجبالي",
   },
   {
     id: 80,
@@ -700,7 +701,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "منور بعروضنا"
+    slogan: "منور بعروضنا",
   },
   {
     id: 81,
@@ -708,7 +709,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "elgebaly-pharmacy",
     category: "sales",
-    slogan: "منور بعروضنا"
+    slogan: "منور بعروضنا",
   },
   {
     id: 82,
@@ -716,7 +717,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "اسهل اسرع اوفر"
+    slogan: "اسهل اسرع اوفر",
   },
   {
     id: 83,
@@ -724,7 +725,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "اسهل اسرع اوفر"
+    slogan: "اسهل اسرع اوفر",
   },
   {
     id: 84,
@@ -732,7 +733,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "اسهل اسرع اوفر"
+    slogan: "اسهل اسرع اوفر",
   },
   {
     id: 85,
@@ -740,7 +741,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "اسهل اسرع اوفر"
+    slogan: "اسهل اسرع اوفر",
   },
   {
     id: 86,
@@ -748,7 +749,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "جولدن ستايل"
+    slogan: "جولدن ستايل",
   },
   {
     id: 87,
@@ -756,7 +757,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "golden-tech",
     category: "sales",
-    slogan: "اسهل اسرع اوفر"
+    slogan: "اسهل اسرع اوفر",
   },
   {
     id: 88,
@@ -785,7 +786,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "سنة جديدة تحدي جديد"
+    slogan: "سنة جديدة تحدي جديد",
   },
   {
     id: 92,
@@ -793,7 +794,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "سنة جديدة تحدي جديد"
+    slogan: "سنة جديدة تحدي جديد",
   },
   {
     id: 93,
@@ -801,7 +802,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "سنة جديدة تحدي جديد"
+    slogan: "سنة جديدة تحدي جديد",
   },
   {
     id: 94,
@@ -809,7 +810,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "سنة جديدة تحدي جديد"
+    slogan: "سنة جديدة تحدي جديد",
   },
   {
     id: 95,
@@ -817,7 +818,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "سنة جديدة تحدي جديد"
+    slogan: "سنة جديدة تحدي جديد",
   },
   {
     id: 96,
@@ -825,7 +826,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 97,
@@ -833,7 +834,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 98,
@@ -841,7 +842,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 99,
@@ -849,7 +850,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 100,
@@ -857,7 +858,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 101,
@@ -865,7 +866,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 102,
@@ -873,7 +874,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 103,
@@ -881,7 +882,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "استشارة في السريع"
+    slogan: "استشارة في السريع",
   },
   {
     id: 104,
@@ -889,7 +890,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 105,
@@ -897,7 +898,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 106,
@@ -905,7 +906,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 107,
@@ -913,7 +914,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 108,
@@ -921,7 +922,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 109,
@@ -929,7 +930,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 110,
@@ -937,7 +938,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 111,
@@ -945,7 +946,7 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
   {
     id: 112,
@@ -953,65 +954,65 @@ export const IMAGES: ImageItem[] = [
     aspect: "square",
     brandId: "dr-hussain-abo-saleh",
     category: "engagement",
-    slogan: "معانا ولا علينا"
+    slogan: "معانا ولا علينا",
   },
-    {
+  {
     id: 113,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593403/3_p8znqf.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 114,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593405/4_tqqhpo.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 115,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593407/5_yyn7j8.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 116,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593409/6_gd8fzp.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 117,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593412/7_x4mesa.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 118,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593414/8_b24hvu.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 119,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593420/9_ah2rdo.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 120,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593426/10_figwuh.jpg",
     aspect: "square",
     brandId: "el-aamal-exhibition",
     category: "sales",
   },
-    {
+  {
     id: 121,
     src: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773593438/11_zldkz4.jpg",
     aspect: "square",
@@ -1105,7 +1106,7 @@ export const VIDEOS: VideoItem[] = [
   {
     id: 18,
     src: "https://res.cloudinary.com/dd3skvgyv/video/upload/v1772847210/1_luqc6t.mp4",
-    aspect: "reel",
+    aspect: "landscape",
     category: "Voice Over",
   },
   {
@@ -1138,7 +1139,7 @@ export const VIDEOS: VideoItem[] = [
     aspect: "reel",
     category: "Teaser",
   },
-  
+
   {
     id: 24,
     src: "https://res.cloudinary.com/dd3skvgyv/video/upload/v1773006910/AQOAG6K7kV-upijBn2_pH5GLkGKZ3Q-mccQTSYV5Yw9NdlHvC82pbBfK_8pJ9ePPFv1F_9rXqD8gO7nqTQmchxWTOip773Z8SeI43SmMr_K3XQ_aeppbr.mp4",
@@ -1493,7 +1494,8 @@ export const CERTIFICATIONS = [
   {
     label: "TIBA New House",
     category: "kitchens",
-    img: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773588789/17_cnexxw.jpg",  href: "https://www.facebook.com/vertex2027",
+    img: "https://res.cloudinary.com/dd3skvgyv/image/upload/v1773588789/17_cnexxw.jpg",
+    href: "https://www.facebook.com/vertex2027",
   },
   {
     label: "Al-amal Group",
@@ -1522,8 +1524,7 @@ export const SERVICES = [
     number: "01",
     title: "ecommerce.title",
     description: "ecommerce.description",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80",
+    image: "../assets/services/1.png",
     href: "ecommerce-solutions",
     features: [
       "ecommerce.features.0",
@@ -1537,8 +1538,7 @@ export const SERVICES = [
     number: "02",
     title: "social_media.title",
     description: "social_media.intro",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80",
+    image: "../assets/services/5.png",
     href: "social-media-marketing",
     features: [
       "social_media.features.0",
@@ -1551,8 +1551,7 @@ export const SERVICES = [
     number: "03",
     title: "web_design.title",
     description: "web_design.intro",
-    image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80",
+    image: "../assets/services/2.png",
     href: "web-design-development",
     features: [
       "web_design.features.0",
@@ -1567,8 +1566,7 @@ export const SERVICES = [
     number: "04",
     title: "media_buying.title",
     description: "media_buying.paragraphs.0",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+    image: "../assets/services/4.png",
     href: "digital-media-buying",
     features: [
       "media_buying.features.0",
@@ -1581,8 +1579,7 @@ export const SERVICES = [
     number: "05",
     title: "branding.title",
     description: "branding.paragraphs.0",
-    image:
-      "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80",
+    image: "../assets/services/6.png",
     href: "branding",
     features: [
       "branding.features.0",
@@ -1597,8 +1594,7 @@ export const SERVICES = [
     number: "06",
     title: "media_production.title",
     description: "media_production.paragraphs.0",
-    image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&q=80",
+    image: "../assets/services/3.png",
     href: "media-production",
     features: [
       "media_production.features.0",

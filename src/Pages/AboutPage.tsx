@@ -207,24 +207,24 @@ export default function AboutPage() {
                       background: isActive
                         ? "linear-gradient(135deg, #3F0F8B, #53178A)"
                         : isDark
-                        ? "rgba(255,255,255,0.05)"
-                        : "rgba(255,255,255,0.7)",
+                          ? "rgba(255,255,255,0.05)"
+                          : "rgba(255,255,255,0.7)",
                       color: isActive
                         ? "#ffffff"
                         : isDark
-                        ? "rgba(255,255,255,0.5)"
-                        : "#6b7280",
+                          ? "rgba(255,255,255,0.5)"
+                          : "#6b7280",
                       boxShadow: isActive
                         ? "0 4px 14px rgba(63,15,139,0.28), inset 0 1px 0 rgba(255,255,255,0.15)"
                         : isDark
-                        ? "none"
-                        : "0 1px 3px rgba(0,0,0,0.06)",
+                          ? "none"
+                          : "0 1px 3px rgba(0,0,0,0.06)",
                       transform: isActive ? "translateY(-1px)" : "none",
                       border: isActive
                         ? "1px solid transparent"
                         : isDark
-                        ? "1px solid rgba(167,139,250,0.1)"
-                        : "1px solid rgba(63,15,139,0.08)",
+                          ? "1px solid rgba(167,139,250,0.1)"
+                          : "1px solid rgba(63,15,139,0.08)",
                     }}
                   >
                     <span
@@ -357,8 +357,8 @@ export default function AboutPage() {
               </h3>
             </div>
             <a
-          target="_blank"
-            href="https://wa.me/+201060318598"
+              target="_blank"
+              href="https://wa.me/+201060318598"
               className="flex-shrink-0 text-white text-sm font-bold tracking-wide px-10 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 whitespace-nowrap"
               style={{
                 background: isDark

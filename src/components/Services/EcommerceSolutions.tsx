@@ -175,7 +175,7 @@ export default function ServicePage() {
               </Link>
             </div>
           </div>
-          <ContactSidebar />
+          <ContactSidebar service={t(SERVICE.titleKey)} />
         </div>
       </div>
     </div>

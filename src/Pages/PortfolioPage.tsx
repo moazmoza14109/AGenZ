@@ -23,15 +23,17 @@ type Category = "branding" | "sales" | "engagement" | "awareness";
 export default function PortfolioPage() {
   const [visible, setVisible] = useState(false);
   const [activeTab, setActiveTab] = useState<"images" | "videos" | "branding">(
-    "images"
+    "images",
   );
-const [activeSloganImages, setActiveSloganImages] = useState<string | null>(null);
+  const [activeSloganImages, setActiveSloganImages] = useState<string | null>(
+    null,
+  );
 
   // Images filter
   const [activeCategoryImages, setActiveCategoryImages] =
     useState<Category | null>(null);
   const [activeBrandImages, setActiveBrandImages] = useState<string | null>(
-    null
+    null,
   );
 
   // Videos filter
@@ -40,7 +42,7 @@ const [activeSloganImages, setActiveSloganImages] = useState<string | null>(null
 
   // Branding tab state
   const [activeBrandBranding, setActiveBrandBranding] = useState<string | null>(
-    null
+    null,
   );
   const [brandLightbox, setBrandLightbox] = useState<number | null>(null);
 
@@ -57,37 +59,38 @@ const [activeSloganImages, setActiveSloganImages] = useState<string | null>(null
   }, []);
 
   // Filtered data
-const filteredImages = (() => {
-  if (!activeCategoryImages) return IMAGES;
+  const filteredImages = (() => {
+    if (!activeCategoryImages) return IMAGES;
 
-  let result = IMAGES.filter(img => img.category === activeCategoryImages);
+    let result = IMAGES.filter((img) => img.category === activeCategoryImages);
 
-  if (!activeBrandImages) return result; // كاتيجوري بس → كل صورها
+    if (!activeBrandImages) return result; // كاتيجوري بس → كل صورها
 
-  result = result.filter(img => img.brandId === activeBrandImages);
+    result = result.filter((img) => img.brandId === activeBrandImages);
 
-  const activeBrandData = BRANDS.find(b => b.id === activeBrandImages);
-  const hasSlogans = activeBrandData?.slogans?.[activeCategoryImages]?.length ?? 0;
+    const activeBrandData = BRANDS.find((b) => b.id === activeBrandImages);
+    const hasSlogans =
+      activeBrandData?.slogans?.[activeCategoryImages]?.length ?? 0;
 
-  if (hasSlogans > 0 && activeSloganImages) {
-    result = result.filter(img => img.slogan === activeSloganImages);
-  }
+    if (hasSlogans > 0 && activeSloganImages) {
+      result = result.filter((img) => img.slogan === activeSloganImages);
+    }
 
-  return result;
-})();
-const handleCategoryChange = (cat: Category | null) => {
-  setActiveCategoryImages(cat);
-  setActiveBrandImages(null);
-  setActiveSloganImages(null);
-};
-const handleBrandChange = (brand: string | null) => {
-  setActiveBrandImages(brand);
-  setActiveSloganImages(null);
-};
+    return result;
+  })();
+  const handleCategoryChange = (cat: Category | null) => {
+    setActiveCategoryImages(cat);
+    setActiveBrandImages(null);
+    setActiveSloganImages(null);
+  };
+  const handleBrandChange = (brand: string | null) => {
+    setActiveBrandImages(brand);
+    setActiveSloganImages(null);
+  };
 
-const filteredVideos = activeVidCategory
-  ? VIDEOS.filter((v) => v.category === activeVidCategory)
-  : VIDEOS; // ← مش [] عشان All بيعرض الكل
+  const filteredVideos = activeVidCategory
+    ? VIDEOS.filter((v) => v.category === activeVidCategory)
+    : VIDEOS; // ← مش [] عشان All بيعرض الكل
   // Branding tab derived data — الصور من BRANDING_IMAGES في data.ts مباشرة
   const brandingBrandIds = [
     ...new Set(BRANDING_IMAGES.map((img) => img.brandId)),
@@ -107,18 +110,18 @@ const filteredVideos = activeVidCategory
   const goNextImg = useCallback(
     () =>
       setImgLightbox(
-        filteredImages[(imgIndex + 1) % filteredImages.length]?.id ?? null
+        filteredImages[(imgIndex + 1) % filteredImages.length]?.id ?? null,
       ),
-    [imgIndex, filteredImages]
+    [imgIndex, filteredImages],
   );
   const goPrevImg = useCallback(
     () =>
       setImgLightbox(
         filteredImages[
           (imgIndex - 1 + filteredImages.length) % filteredImages.length
-        ]?.id ?? null
+        ]?.id ?? null,
       ),
-    [imgIndex, filteredImages]
+    [imgIndex, filteredImages],
   );
 
   // Lightbox navigation - videos
@@ -129,18 +132,18 @@ const filteredVideos = activeVidCategory
   const goNextVid = useCallback(
     () =>
       setVidLightbox(
-        filteredVideos[(vidIndex + 1) % filteredVideos.length]?.id ?? null
+        filteredVideos[(vidIndex + 1) % filteredVideos.length]?.id ?? null,
       ),
-    [vidIndex, filteredVideos]
+    [vidIndex, filteredVideos],
   );
   const goPrevVid = useCallback(
     () =>
       setVidLightbox(
         filteredVideos[
           (vidIndex - 1 + filteredVideos.length) % filteredVideos.length
-        ]?.id ?? null
+        ]?.id ?? null,
       ),
-    [vidIndex, filteredVideos]
+    [vidIndex, filteredVideos],
   );
 
   // Lightbox navigation - branding
@@ -153,9 +156,9 @@ const filteredVideos = activeVidCategory
       setBrandLightbox(
         filteredBrandingImages[
           (brandLightboxIndex + 1) % filteredBrandingImages.length
-        ]?.id ?? null
+        ]?.id ?? null,
       ),
-    [brandLightboxIndex, filteredBrandingImages]
+    [brandLightboxIndex, filteredBrandingImages],
   );
   const goPrevBrand = useCallback(
     () =>
@@ -163,9 +166,9 @@ const filteredVideos = activeVidCategory
         filteredBrandingImages[
           (brandLightboxIndex - 1 + filteredBrandingImages.length) %
             filteredBrandingImages.length
-        ]?.id ?? null
+        ]?.id ?? null,
       ),
-    [brandLightboxIndex, filteredBrandingImages]
+    [brandLightboxIndex, filteredBrandingImages],
   );
 
   const brandPrimary = isDark ? "#c4b5fd" : "#3F0F8B";
@@ -266,8 +269,8 @@ const filteredVideos = activeVidCategory
               activeTab === "images"
                 ? "bg-purple-600 text-white shadow-lg"
                 : isDark
-                ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
             {t("portfolio.section_photos")} ({IMAGES.length})
@@ -278,8 +281,8 @@ const filteredVideos = activeVidCategory
               activeTab === "videos"
                 ? "bg-purple-600 text-white shadow-lg"
                 : isDark
-                ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
             {t("portfolio.section_videos")} ({VIDEOS.length})
@@ -293,8 +296,8 @@ const filteredVideos = activeVidCategory
               activeTab === "branding"
                 ? "bg-purple-600 text-white shadow-lg"
                 : isDark
-                ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
             }`}
           >
             {t("portfolio.section_branding")} ({BRANDING_IMAGES.length})
@@ -309,15 +312,15 @@ const filteredVideos = activeVidCategory
         >
           {activeTab === "images" && (
             <TwoLevelFilter
-  key="images-filter"
-  activeCategory={activeCategoryImages}
-  activeBrand={activeBrandImages}
-  activeSlogan={activeSloganImages}
-  onCategoryChange={handleCategoryChange}
-  onBrandChange={handleBrandChange}
-  onSloganChange={setActiveSloganImages}
-  isDark={isDark}
-/>
+              key="images-filter"
+              activeCategory={activeCategoryImages}
+              activeBrand={activeBrandImages}
+              activeSlogan={activeSloganImages}
+              onCategoryChange={handleCategoryChange}
+              onBrandChange={handleBrandChange}
+              onSloganChange={setActiveSloganImages}
+              isDark={isDark}
+            />
           )}
           {activeTab === "branding" && (
             <BrandOnlyFilter
@@ -359,26 +362,34 @@ const filteredVideos = activeVidCategory
                   background: isDark ? "rgba(167,139,250,0.1)" : "#f3f4f6",
                 }}
               />
-        <span className="text-xs font-bold text-base-content/30">
-  {filteredImages.length} / {IMAGES.length} {t("portfolio.posts_count")}
-</span>
-
+              <span className="text-xs font-bold text-base-content/30">
+                {filteredImages.length} / {IMAGES.length}{" "}
+                {t("portfolio.posts_count")}
+              </span>
             </div>
             {filteredImages.length === 0 ? (
- <div className="flex flex-col items-center justify-center py-16 opacity-40">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-12 h-12 mb-3">
-      <path strokeLinecap="round" strokeLinejoin="round"
-        d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 3l18 18" />
-    </svg>
-<p className="text-sm font-medium">
-  {!activeCategoryImages
-    ? t("portfolio.filter_hint_start")
-    : activeBrandImages && !activeSloganImages
-    ? t("portfolio.filter_hint_campaign")
-    : t("portfolio.no_images")}
-</p>
-
-  </div>
+              <div className="flex flex-col items-center justify-center py-16 opacity-40">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  className="w-12 h-12 mb-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 3l18 18"
+                  />
+                </svg>
+                <p className="text-sm font-medium">
+                  {!activeCategoryImages
+                    ? t("portfolio.filter_hint_start")
+                    : activeBrandImages && !activeSloganImages
+                      ? t("portfolio.filter_hint_campaign")
+                      : t("portfolio.no_images")}
+                </p>
+              </div>
             ) : (
               <div
                 className="grid gap-4"
@@ -420,21 +431,32 @@ const filteredVideos = activeVidCategory
                   background: isDark ? "rgba(167,139,250,0.1)" : "#f3f4f6",
                 }}
               />
-        <span className="text-xs font-bold text-base-content/30">
-  {filteredVideos.length} / {VIDEOS.length} {t("portfolio.videos_count")}
-</span>
+              <span className="text-xs font-bold text-base-content/30">
+                {filteredVideos.length} / {VIDEOS.length}{" "}
+                {t("portfolio.videos_count")}
+              </span>
             </div>
             {filteredVideos.length === 0 ? (
-  <div className="flex flex-col items-center justify-center py-16 opacity-40">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-12 h-12 mb-3">
-      <path strokeLinecap="round" strokeLinejoin="round"
-        d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-    </svg>
-<p className="text-sm font-medium">
-  {!activeVidCategory ? t("portfolio.filter_hint_start") : t("portfolio.no_videos")}
-</p>
-
-  </div>
+              <div className="flex flex-col items-center justify-center py-16 opacity-40">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  className="w-12 h-12 mb-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+                  />
+                </svg>
+                <p className="text-sm font-medium">
+                  {!activeVidCategory
+                    ? t("portfolio.filter_hint_start")
+                    : t("portfolio.no_videos")}
+                </p>
+              </div>
             ) : (
               <div
                 className="grid gap-4"
@@ -443,12 +465,20 @@ const filteredVideos = activeVidCategory
                 }}
               >
                 {filteredVideos.map((item) => (
-                  <VideoCard
+                  <div
                     key={item.id}
-                    item={item}
-                    onClick={() => setVidLightbox(item.id)}
-                    isDark={isDark}
-                  />
+                    style={
+                      item.aspect === "landscape"
+                        ? { gridColumn: "1 / -1" }
+                        : {}
+                    }
+                  >
+                    <VideoCard
+                      item={item}
+                      onClick={() => setVidLightbox(item.id)}
+                      isDark={isDark}
+                    />
+                  </div>
                 ))}
               </div>
             )}
@@ -495,7 +525,10 @@ const filteredVideos = activeVidCategory
                     d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 3l18 18"
                   />
                 </svg>
-<p className="text-sm font-medium">{t("portfolio.no_files")}</p>              </div>
+                <p className="text-sm font-medium">
+                  {t("portfolio.no_files")}
+                </p>{" "}
+              </div>
             ) : (
               <div
                 className="grid gap-x-8 gap-y-10"
@@ -545,7 +578,7 @@ const filteredVideos = activeVidCategory
             </h3>
           </div>
           <a
-          target="_blank"
+            target="_blank"
             href="https://wa.me/+201060318598"
             className="flex-shrink-0 text-white text-sm font-bold tracking-wide px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl whitespace-nowrap"
             style={{
@@ -589,7 +622,7 @@ const filteredVideos = activeVidCategory
       {brandLightbox !== null &&
         (() => {
           const item = filteredBrandingImages.find(
-            (i) => i.id === brandLightbox
+            (i) => i.id === brandLightbox,
           );
           if (!item) return null;
           return (

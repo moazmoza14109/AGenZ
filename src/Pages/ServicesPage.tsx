@@ -137,20 +137,23 @@ function ServiceCard({
     >
       {/* image */}
       <div
-        className="relative overflow-hidden"
-        style={{ height: "220px", background: "#3F0F8B" }}
+        className="relative overflow-hidden flex items-center justify-center"
+        style={{
+          height: "220px",
+          background: isDark
+            ? "linear-gradient(130deg, rgba(63,15,139,0.15), rgba(83,23,138,0.12))"
+            : "linear-gradient(130deg, rgba(63,15,139,0.15), rgba(83,23,138,0.12))",
+        }}
       >
         <img
           src={svc.image}
           alt={t(svc.title)}
-          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${
-            isDark ? "brightness-75" : ""
-          }`}
+          className="w-32 h-32 object-contain transition-transform duration-700 group-hover:scale-110"
         />
         <div
           className="absolute inset-0 transition-opacity duration-300"
           style={{
-            background: "rgba(63,15,139,0.5)",
+            background: "rgba(63,15,139,0.3)",
             opacity: hovered ? 1 : 0,
           }}
         />
@@ -169,7 +172,6 @@ function ServiceCard({
           ↗
         </span>
       </div>
-
       {/* body */}
       <div
         className="px-5 py-5 transition-colors duration-300"
@@ -179,8 +181,8 @@ function ServiceCard({
               ? "rgba(124,58,237,0.15)"
               : "rgba(255,255,255,0.04)"
             : hovered
-            ? "#faf8ff"
-            : "#ffffff",
+              ? "#faf8ff"
+              : "#ffffff",
           border: isDark ? "1px solid rgba(167,139,250,0.1)" : "none",
           borderTop: "none",
         }}
@@ -220,8 +222,8 @@ function ServiceCard({
               const shortLabel = fullText.includes(":")
                 ? fullText.split(":")[0].trim()
                 : fullText.length > 48
-                ? fullText.slice(0, 48).trim() + "…"
-                : fullText;
+                  ? fullText.slice(0, 48).trim() + "…"
+                  : fullText;
               return (
                 <li key={fi} className="flex items-start gap-2">
                   <span
@@ -242,8 +244,8 @@ function ServiceCard({
                           ? "#c4b5fd"
                           : "#3F0F8B"
                         : isDark
-                        ? "rgba(255,255,255,0.4)"
-                        : "#9CA3AF",
+                          ? "rgba(255,255,255,0.4)"
+                          : "#9CA3AF",
                       fontWeight: hovered ? 600 : 400,
                     }}
                   >

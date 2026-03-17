@@ -19,9 +19,11 @@ import Branding from "./components/Services/Branding";
 import MediaProduction from "./components/Services/MediaProduction";
 import { useEffect, useState } from "react";
 import { useTheme } from "./context/ThemeContext";
+import { useTranslation } from "react-i18next";
+
 function useBreakpoint() {
   const [w, setW] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth : 1200
+    typeof window !== "undefined" ? window.innerWidth : 1200,
   );
   useEffect(() => {
     const h = () => setW(window.innerWidth);
@@ -34,6 +36,13 @@ function useBreakpoint() {
 function App() {
   const { isMd } = useBreakpoint();
   const { isDark } = useTheme();
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    const dir = i18n.language === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return (
     <>

@@ -162,7 +162,7 @@ export default function SocialMediaPage() {
               </Link>
             </div>
           </div>
-          <ContactSidebar />
+          <ContactSidebar service={t(SERVICE.titleKey)} />
         </div>
       </div>
     </div>

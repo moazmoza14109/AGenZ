@@ -174,7 +174,7 @@ export default function WebDesignDevelopment() {
               </a>
             </div>
           </div>
-          <ContactSidebar />
+          <ContactSidebar service={t(SERVICE.titleKey)} />
         </div>
       </div>
     </div>

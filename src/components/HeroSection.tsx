@@ -199,18 +199,7 @@ export default function HeroSection() {
           >
             {t("hero.title")}
             <br />
-            {/* <span
-              style={{
-                background: `linear-gradient(90deg, ${brandSecondary}, ${brandPrimary}, ${brandSecondary})`,
-                backgroundSize: "200% auto",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                animation: "shimmer 3s linear infinite",
-              }}
-            > */}
-              {t("hero.title_span")}
-            {/* </span> */}
+
           </h1>
 
           <p className="text-base-content/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto">

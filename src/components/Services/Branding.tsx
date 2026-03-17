@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "../../context/ThemeContext";
 
 const SERVICE = {
-  titleKey: "Branding",
+  titleKey: "branding.title",
   paragraphsKey: "branding.paragraphs",
   servicesLabelKey: "branding.services_label",
   servicesListKey: "branding.services_list",
@@ -164,7 +164,7 @@ export default function ServicePageV4() {
               </a>
             </div>
           </div>
-          <ContactSidebar />
+          <ContactSidebar service={t(SERVICE.titleKey)} />
         </div>
       </div>
     </div>

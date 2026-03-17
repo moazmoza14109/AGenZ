@@ -3,11 +3,13 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
 import ar from "./locales/ar.json";
 
-i18n.use(initReactI18next).init({
-  lng: "ar", // ← Arabic default ثابت
-  fallbackLng: "en",
-  debug: import.meta.env.DEV, // ← بس في development
+// ← اقرأ اللغة المحفوظة، لو مفيش خد "ar" default
+const savedLang = localStorage.getItem("lang") || "ar";
 
+i18n.use(initReactI18next).init({
+  lng: savedLang,
+  fallbackLng: "en",
+  debug: import.meta.env.DEV,
   resources: {
     en: { translation: en },
     ar: { translation: ar },

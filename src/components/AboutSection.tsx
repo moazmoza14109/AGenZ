@@ -156,19 +156,12 @@ export default function AboutSection() {
             className="text-4xl sm:text-5xl font-black leading-[1.05] mb-6 text-base-content transition-colors duration-300"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            {t("about.title_1")}
-            <br />
-            {t("about.title_2")}
-            <br />
-            {t("about.title_3")}
+            {t("about.title")}
           </h2>
 
           {/* ✅ الوصف — text-base-content/60 */}
           <p className="text-base-content/60 text-base leading-relaxed mb-4 max-w-md transition-colors duration-300">
             {t("about.desc_1")}
-          </p>
-          <p className="text-base-content/60 text-base leading-relaxed mb-10 max-w-md transition-colors duration-300">
-            {t("about.desc_2")}
           </p>
 
           {/* ✅ زرار CTA */}

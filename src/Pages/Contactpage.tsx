@@ -62,7 +62,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -80,7 +80,7 @@ export default function ContactPage() {
           service: form.service,
           message: form.message,
         },
-        "2BFA77R694R8P6kdT"
+        "2BFA77R694R8P6kdT",
       );
       setSubmitted(true);
     } catch {
@@ -292,7 +292,15 @@ export default function ContactPage() {
                       <option value="branding">
                         {t("contact.service_branding")}
                       </option>
-                      <option value="seo">{t("contact.service_seo")}</option>
+                      <option value="media">
+                        {t("contact.service_media")}
+                      </option>
+                      <option value="Media Production">
+                        {t("contact.service_media_pro")}
+                      </option>
+                      <option value="ecommerce">
+                        {t("contact.service_ecommerce")}
+                      </option>
                       <option value="social">
                         {t("contact.service_social")}
                       </option>
@@ -373,14 +381,14 @@ export default function ContactPage() {
             <div className="flex text-center items-center justify-center py-5 text-base-content/40 text-sm">
               or
             </div>
-              <a
-                target="_blank"
-                dir="ltr"
-                href="https://wa.me/+201060318598"
-                className="btn font-medium flex items-center justify-center bg-[#25D366] hover:bg-[#1ebe5d] rounded"
-              >
-                WhatsApp
-              </a>
+            <a
+              target="_blank"
+              dir="ltr"
+              href="https://wa.me/+201060318598"
+              className="btn font-medium flex items-center justify-center bg-[#25D366] hover:bg-[#1ebe5d] rounded"
+            >
+              WhatsApp
+            </a>
           </div>
 
           {/* ── Info cards ── */}

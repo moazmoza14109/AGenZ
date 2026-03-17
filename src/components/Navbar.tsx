@@ -22,7 +22,7 @@ const SOCIAL_KEYS = [
 
 function useBreakpoint() {
   const [w, setW] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth : 1200
+    typeof window !== "undefined" ? window.innerWidth : 1200,
   );
   useEffect(() => {
     const handler = () => setW(window.innerWidth);
@@ -163,9 +163,11 @@ function DarkModeToggle() {
 function LangToggle() {
   const { i18n } = useTranslation();
   const isAr = i18n.language === "ar";
+
   const toggle = () => {
     const next = isAr ? "en" : "ar";
     i18n.changeLanguage(next);
+    localStorage.setItem("lang", next); // ← احفظ اللغة
     document.documentElement.dir = next === "ar" ? "rtl" : "ltr";
     document.documentElement.lang = next;
   };

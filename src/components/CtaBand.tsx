@@ -32,7 +32,7 @@ export default function CTABand() {
           {t("cta_band.badge")}
         </p>
         <h2
-          className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-8"
+          className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight mb-8"
           style={{ fontFamily: "'Playfair Display',serif" }}
         >
           {t("cta_band.title_1")}

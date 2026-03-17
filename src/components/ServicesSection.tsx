@@ -22,7 +22,7 @@ function useInView(threshold = 0.15) {
           observer.disconnect();
         }
       },
-      { threshold }
+      { threshold },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -129,13 +129,22 @@ export default function ServicesSection() {
                   e.currentTarget.style.background = "rgba(255,255,255,0.03)";
               }}
             >
-              <img
-                src={svc.image}
-                alt={t(svc.title)}
-                className={`w-40 h-40 mb-8 group-hover:scale-105 transition-all duration-300 ${
-                  isDark ? "brightness-90 saturate-75" : ""
-                }`}
-              />
+              {/* Icon Container */}
+              <div
+                className="w-28 h-28 mb-6 rounded-2xl flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-110"
+                style={{
+                  background: isDark
+                    ? "linear-gradient(130deg, rgba(63,15,139,0.15), rgba(83,23,138,0.12))"
+                    : "linear-gradient(130deg, rgba(63,15,139,0.15), rgba(83,23,138,0.12))",
+                  boxShadow: "0 8px 32px rgba(63,15,139,0.3)",
+                }}
+              >
+                <img
+                  src={svc.image}
+                  alt={t(svc.title)}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
 
               {/* ✅ عنوان الكارد */}
               <h3

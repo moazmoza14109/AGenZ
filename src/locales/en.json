@@ -9,9 +9,8 @@
   },
   "hero": {
     "badge": "Creative Digital Agency",
-    "title": "Your partner on the journey ",
-    "title_span": "to the top",
-    "description": "At Agenz, we empower your brand to lead the market and stay ahead of the competition. In a market that never waits, leadership belongs to those who make their presence impossible to ignore.",
+    "title": "Your partner on the journey to the top",
+    "description": "In a market that never waits, leadership belongs to those who make their presence impossible to ignore. At Agenz, we empower your brand to lead the market and stay ahead of the competition.",
     "cta": "Start Your Journey",
     "tag_creative": "✦ Creative",
     "tag_strategic": "✦ Strategic"
@@ -31,9 +30,7 @@
       "other": "Other"
     },
     "badge": "AGENZ Journey",
-    "title_1": "A journey",
-    "title_2": "that began with",
-    "title_3": "limitless passion",
+    "title": "A journey that began with limitless passion",
     "desc_1": "Since 2020, we have believed that behind every leading brand is a story worth telling with excellence — and presenting to the market with the professionalism it deserves. Our journey was never simply about delivering technical services; it has always been a deep commitment to innovation that solves real problems and creates success that commands its place at the heart of the market.",
     "desc_2": "From design to media, marketing to e-commerce, we're here to continue your story and take your brand to the next level.",
     "cta": "Ready to begin the journey?",
@@ -118,8 +115,8 @@
   },
   "cta_band": {
     "badge": "Let's Continue Your Story",
-    "title_1": "Ready to Write the Next",
-    "title_2": "Chapter of Your Success?",
+    "title_1": "Ready to grow in your field",
+    "title_2": "with the right marketing!",
     "cta": "Contact Us"
   },
   "contact": {
@@ -137,10 +134,12 @@
     "field_phone_placeholder": "+20 1xx xxx xxxx",
     "field_service": "Service",
     "field_service_placeholder": "Select service…",
-    "service_web": "Web Development",
-    "service_branding": "Branding & Identity",
-    "service_seo": "SEO & Marketing",
-    "service_social": "Social Media",
+    "service_ecommerce": "E-commerce Solution",
+    "service_social": "Social Media Marketing",
+    "service_web": "Web Design & Development",
+    "service_media": "Digital Madia Buying",
+    "service_media_pro": "Media Production",
+    "service_branding": "Branding",
     "service_other": "Other",
     "field_message": "Message",
     "field_message_placeholder": "Tell us about your project…",
@@ -157,11 +156,11 @@
     "quote_sub": "Next Chapter Begins ✦"
   },
   "portfolio": {
-      "filter_hint_start": "Select a category to begin",
-  "filter_hint_campaign": "Select a campaign above",
-  "no_images": "No images found",
-  "no_videos": "No videos found",
-  "no_files": "No files found",
+    "filter_hint_start": "Select a category to begin",
+    "filter_hint_campaign": "Select a campaign above",
+    "no_images": "No images found",
+    "no_videos": "No videos found",
+    "no_files": "No files found",
     "badge": "Our Work",
     "title": "Stories We've Helped Bring to Life",
     "work_title": "Some Of Our Work",
@@ -209,8 +208,8 @@
   "service_cta_badge": "Ready to grow?",
   "service_cta_btn": "Contact Us",
   "ecommerce": {
-    "title": "E-commerce Solutions",
-    "description": "We are a leading E-Commerce web development company crafting high-functioning websites for the ultimate online shopping experience. Our services include a full-fledged online store web design, managing the backend & driving sales. The goal is to transform your business to a multichannel, data-driven environment.",
+    "title": "E-commerce Solution.",
+    "description": "At this stage, your real journey toward achieving your desired numbers begins. We don't launch random campaigns; instead, we design a comprehensive marketing system that combines data intelligence with professional execution.",
     "project_note": "Project: Nour Juicr",
     "services_label": "Our E-commerce Services Include:",
     "services_list": [
@@ -232,7 +231,7 @@
   },
   "social_media": {
     "title": "Social Media Marketing",
-    "intro": "Social media is more than just a platform—it's where your brand builds connections, fosters engagement, and drives growth. At Agenz, we specialize in crafting tailored strategies that amplify your voice, resonate with your audience, and deliver measurable results.",
+    "intro": "We turn creativity into numbers, and ambition into tangible results through comprehensive advertising campaign management Including:",
     "paragraphs": [
       "From visually stunning content to meaningful interactions, we ensure your social presence reflects your brand's unique story.",
       "Our services go beyond posting—we focus on building authentic relationships with your audience through active community engagement.",
@@ -248,7 +247,7 @@
   },
   "web_design": {
     "title": "Web Design & Development",
-    "intro": "In today's competitive and ever-evolving digital landscape, a well-designed website isn't just an option—it's a necessity.",
+    "intro": "We design a seamless user experience that ensures every visitor becomes a loyal customer, doubling your chances of achieving sales that exceed your expectations.",
     "project_note": "Project: Butterfly Tex",
     "body_paragraphs": [
       "At the heart of our approach is a commitment to excellence.",
@@ -277,7 +276,7 @@
   "media_buying": {
     "title": "Digital Media Buying",
     "paragraphs": [
-      "In a world overflowing with content, standing out requires more than just great ideas—it demands smart strategies and precision targeting.",
+      "In a world saturated with content, standing out requires more than just great ideas—it requires smart strategies and precise targeting. At Agenz, we specialize in digital advertising buying that ensures your brand reaches the right people, in the right place, at the right time.",
       "Our data-driven approach combines creativity with analytics to craft campaigns that deliver measurable results."
     ],
     "services_label": "Our Media Buying Services:",
@@ -332,7 +331,7 @@
   "media_production": {
     "title": "Media Production",
     "paragraphs": [
-      "In a world where attention is the most valuable currency, powerful media can make all the difference.",
+      "We produce world-class visual and cinematic content that breathes life into your brand and captivates from the first glance.",
       "From the lens of a camera to the magic of post-production, our team crafts high-quality content designed to engage, inspire, and drive results."
     ],
     "services_label": "Our Media Production Services:",
@@ -379,10 +378,10 @@
         "desc": "We leverage the full Google ecosystem — from Ads to Analytics — to connect your brand with the right audience at the right time."
       },
       "tiktok": {
-  "name": "TikTok",
-  "badge": "TikTok Partner",
-  "desc": "We create engaging content and targeted ad campaigns on TikTok that reach millions and drive authentic engagement with your audience."
-}
+        "name": "TikTok",
+        "badge": "TikTok Partner",
+        "desc": "We create engaging content and targeted ad campaigns on TikTok that reach millions and drive authentic engagement with your audience."
+      }
     }
   },
   "footer": {
