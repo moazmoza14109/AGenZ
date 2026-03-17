@@ -13,7 +13,7 @@ const RIGHT_BOTTOM =
 
 function useBreakpoint() {
   const [w, setW] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth : 1200
+    typeof window !== "undefined" ? window.innerWidth : 1200,
   );
   useEffect(() => {
     const handler = () => setW(window.innerWidth);
@@ -123,7 +123,9 @@ export default function HeroSection() {
             height: `${[6, 8, 5, 10, 7, 4][i]}px`,
             left: `${[15, 75, 30, 85, 50, 20][i]}%`,
             top: `${[20, 35, 70, 55, 80, 50][i]}%`,
-            background: isDark ? "rgba(167,139,250,0.5)" : "rgba(63,15,139,0.2)",
+            background: isDark
+              ? "rgba(167,139,250,0.5)"
+              : "rgba(63,15,139,0.2)",
             animation: `particleDrift ${[4, 5.5, 3.8, 6, 4.5, 5][i]}s ease-in-out infinite`,
             animationDelay: `${[0, 0.8, 1.5, 0.3, 2, 1][i]}s`,
           }}
@@ -131,12 +133,13 @@ export default function HeroSection() {
       ))}
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-68px)] px-6 md:px-16 py-12 lg:py-0">
-
         {/* ── Left image — desktop ── */}
         {isLg && (
           <div
             className={`absolute left-16 xl:left-24 top-1/2 float-left transition-all duration-1000 ease-out ${
-              visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"
+              visible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-16"
             }`}
           >
             <div className="relative w-52 xl:w-64">
@@ -161,7 +164,9 @@ export default function HeroSection() {
               <div
                 className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full blur-xl"
                 style={{
-                  background: isDark ? "rgba(167,139,250,0.25)" : "rgba(83,23,138,0.18)",
+                  background: isDark
+                    ? "rgba(167,139,250,0.25)"
+                    : "rgba(83,23,138,0.18)",
                   animation: "floatSimple 3s ease-in-out infinite",
                 }}
               />
@@ -186,7 +191,7 @@ export default function HeroSection() {
           }`}
         >
           <p
-            className="text-xs font-bold tracking-[0.3em] uppercase mb-4"
+            className="text-xs font-bold uppercase mb-4"
             style={{ color: brandSecondary }}
           >
             {t("hero.badge")}
@@ -199,7 +204,6 @@ export default function HeroSection() {
           >
             {t("hero.title")}
             <br />
-
           </h1>
 
           <p className="text-base-content/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto">
@@ -211,14 +215,16 @@ export default function HeroSection() {
             <div
               className="absolute inset-0 rounded-full"
               style={{
-                background: isDark ? "rgba(124,58,237,0.4)" : "rgba(63,15,139,0.25)",
+                background: isDark
+                  ? "rgba(124,58,237,0.4)"
+                  : "rgba(63,15,139,0.25)",
                 animation: "pulseBlob 2s ease-in-out infinite",
                 transform: "scale(1.15)",
               }}
             />
             <Link
               to="/about"
-              className="relative inline-block text-white text-sm font-bold tracking-[0.2em] uppercase px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="relative inline-block text-white text-sm font-bold px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
               style={{
                 background: isDark
                   ? "linear-gradient(135deg, #7c3aed, #6d28d9)"
@@ -320,7 +326,9 @@ export default function HeroSection() {
       <div
         className="pointer-events-none absolute top-1/2 left-1/2 w-[700px] h-[700px] rounded-full z-0"
         style={{
-          border: isDark ? "1px solid rgba(167,139,250,0.06)" : "1px solid rgba(63,15,139,0.04)",
+          border: isDark
+            ? "1px solid rgba(167,139,250,0.06)"
+            : "1px solid rgba(63,15,139,0.04)",
           transform: "translate(-50%, -50%)",
           animation: "rotateSlow 20s linear infinite",
         }}
@@ -328,7 +336,9 @@ export default function HeroSection() {
       <div
         className="pointer-events-none absolute top-1/2 left-1/2 w-[500px] h-[500px] rounded-full z-0"
         style={{
-          border: isDark ? "1px solid rgba(167,139,250,0.05)" : "1px solid rgba(63,15,139,0.03)",
+          border: isDark
+            ? "1px solid rgba(167,139,250,0.05)"
+            : "1px solid rgba(63,15,139,0.03)",
           transform: "translate(-50%, -50%)",
           animation: "rotateSlow 14s linear infinite reverse",
         }}

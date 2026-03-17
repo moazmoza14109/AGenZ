@@ -48,7 +48,7 @@ export default function ServicesPage() {
               style={{ background: brandPrimary }}
             />
             <p
-              className="text-xs font-bold tracking-[0.25em] uppercase transition-colors duration-300"
+              className="text-xs font-bold transition-colors duration-300"
               style={{ color: brandPrimary }}
             >
               {t("services.page_badge")}
@@ -77,7 +77,7 @@ export default function ServicesPage() {
               style={{ background: brandPrimary }}
             />
             <p
-              className="text-xs tracking-[0.25em] uppercase transition-colors duration-300"
+              className="text-xs transition-colors duration-300"
               style={{ color: brandPrimary }}
             >
               {t("services.what_we_do_badge")}

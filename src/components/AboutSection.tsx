@@ -11,7 +11,7 @@ function useInView(threshold = 0.2) {
       ([entry]) => {
         if (entry.isIntersecting) setInView(true);
       },
-      { threshold }
+      { threshold },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -45,7 +45,7 @@ const RocketSVG = () => (
           fill="#333"
           opacity={0.3}
         />
-      ))
+      )),
     )}
   </svg>
 );
@@ -145,7 +145,7 @@ export default function AboutSection() {
         >
           {/* ✅ badge */}
           <p
-            className="text-[11px] font-bold tracking-[0.3em] uppercase mb-4 transition-colors duration-300"
+            className="text-[11px] font-bold mb-4 transition-colors duration-300"
             style={{ color: brandPrimary }}
           >
             {t("about.badge")}
@@ -153,8 +153,8 @@ export default function AboutSection() {
 
           {/* ✅ العنوان — text-base-content في dark، داكن في light */}
           <h2
-            className="text-4xl sm:text-5xl font-black leading-[1.05] mb-6 text-base-content transition-colors duration-300"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-3xl sm:text-4xl font-bold leading-[1.05] mb-6 text-base-content transition-colors duration-300"
+            // style={{ fontFamily: "'Playfair Display', serif" }}
           >
             {t("about.title")}
           </h2>
@@ -167,7 +167,7 @@ export default function AboutSection() {
           {/* ✅ زرار CTA */}
           <Link
             to="/about"
-            className="inline-block text-white text-xs font-bold tracking-[0.2em] uppercase px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="inline-block text-white text-xs font-bold  uppercase px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{
               background: isDark
                 ? "linear-gradient(135deg, #7c3aed, #6d28d9)"

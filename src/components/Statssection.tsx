@@ -313,7 +313,7 @@ export default function StatsSection() {
         {/* ✅ زرار CTA */}
         <Link
           to="/contact"
-          className="inline-block text-white text-xs font-bold tracking-[0.2em] uppercase px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          className="inline-block text-white text-xs font-bold  uppercase px-10 py-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
           style={{
             background: isDark
               ? "linear-gradient(135deg, #7c3aed, #6d28d9)"

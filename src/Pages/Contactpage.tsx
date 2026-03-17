@@ -33,7 +33,7 @@ const phones = [
 ];
 
 const LabelEl = ({ children }: { children: React.ReactNode }) => (
-  <label className="block text-[10px] font-bold tracking-widest uppercase mb-1.5 text-base-content/40">
+  <label className="block text-[10px] font-bold mb-1.5 text-base-content/40">
     {children}
   </label>
 );
@@ -132,7 +132,7 @@ export default function ContactPage() {
           }`}
         >
           <p
-            className="text-xs font-bold tracking-[0.3em] uppercase mb-3"
+            className="text-xs font-bold mb-3"
             style={{ color: brandSecondary }}
           >
             {t("contact.badge")}
@@ -165,7 +165,7 @@ export default function ContactPage() {
             }}
           >
             <p
-              className="text-[10px] font-bold tracking-[0.3em] uppercase mb-1"
+              className="text-[10px] font-bold  mb-1"
               style={{ color: brandSecondary }}
             >
               {t("contact.form_badge")}
@@ -334,7 +334,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full text-white text-sm font-bold tracking-[0.2em] uppercase py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full text-white text-sm font-bold tracking-wide uppercase py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
                   style={{
                     background: isDark
                       ? "linear-gradient(135deg, #7c3aed, #6d28d9)"
@@ -424,7 +424,7 @@ export default function ContactPage() {
                 </span>
                 <div>
                   <p
-                    className="text-[10px] font-bold tracking-[0.25em] uppercase mb-1"
+                    className="text-[10px] font-bold  mb-1"
                     style={{ color: brandSecondary }}
                   >
                     {t(item.labelKey)}
@@ -462,7 +462,7 @@ export default function ContactPage() {
                         <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.5 11.5 0 00.57 3.6 1 1 0 01-.25 1.01l-2.2 2.18z" />
                       </svg>
                     </div>
-                    <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/50">
+                    <span className="text-[10px] font-bold text-white/50">
                       {p.label}
                     </span>
                   </div>

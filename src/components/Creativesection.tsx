@@ -10,7 +10,7 @@ function useScrollToggle(threshold = 0.3) {
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => setScrollDark(entry.isIntersecting),
-      { threshold }
+      { threshold },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -19,7 +19,6 @@ function useScrollToggle(threshold = 0.3) {
 }
 
 function CollageCard() {
-  const { t } = useTranslation();
   return (
     <div
       className="relative rounded-2xl overflow-hidden"
@@ -38,28 +37,31 @@ function CollageCard() {
         }}
       />
       <img
-        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+        src="../assets/mr-mahmoud-mouawad-2.jpeg"
         alt="Person"
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 object-cover"
         style={{
-          filter: "grayscale(100%) contrast(1.1)",
+          filter: "grayscale(100%) contrast(1.25) brightness(0.8) sepia(30%)",
           mixBlendMode: "luminosity",
         }}
       />
+      {/* Gradient fade للأسفل */}
       <div
-        className="absolute animate-[float1_4s_ease-in-out_infinite]"
-        style={{ bottom: "33%", left: "50%", transform: "translateX(-50%)" }}
-      >
-        <div
-          className="text-white font-black text-2xl px-6 py-2 rounded-lg shadow-xl tracking-wide"
-          style={{
-            fontFamily: "'Playfair Display',serif",
-            background: "#3F0F8B",
-          }}
-        >
-          {t("creative.collage_idea")}
-        </div>
-      </div>
+        className="absolute bottom-0 left-0 right-0 h-1/3"
+        style={{
+          background: "linear-gradient(to top, #3F0F8B 0%, transparent 100%)",
+          pointerEvents: "none",
+        }}
+      />
+      {/* Subtle glow */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 80%, rgba(196,181,253,0.15) 0%, transparent 70%)",
+          pointerEvents: "none",
+        }}
+      />
       <div
         className="absolute"
         style={{
@@ -90,7 +92,7 @@ function CollageCard() {
           </svg>
         </div>
       </div>
-      <div
+      {/* <div
         className="absolute"
         style={{
           top: "11%",
@@ -113,19 +115,8 @@ function CollageCard() {
             </div>
           ))}
         </div>
-      </div>
-      {[
-        { top: "27%", left: "10%", color: "#f0c030", s: 12 },
-        { top: "44%", left: "18%", color: "#A78BFA", s: 8 },
-        { top: "59%", right: "13%", color: "#f0c030", s: 12 },
-        { bottom: "18%", left: "23%", color: "#f0c030", s: 8 },
-      ].map((d, i) => (
-        <div
-          key={i}
-          className="absolute rounded-full"
-          style={{ ...d, width: d.s, height: d.s, background: d.color }}
-        />
-      ))}
+      </div> */}
+
       <div className="absolute" style={{ top: "29%", left: "6%" }}>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           <path
@@ -172,28 +163,6 @@ function CollageCard() {
           />
         </svg>
       </div>
-      <svg
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        viewBox="0 0 400 520"
-        fill="none"
-      >
-        <path
-          d="M200 315C180 370 150 395 120 425C100 445 82 454 62 464"
-          stroke="#f0c030"
-          strokeWidth="2"
-          fill="none"
-          strokeDasharray="6 4"
-          opacity="0.75"
-        />
-        <path
-          d="M200 315C220 370 250 395 276 424"
-          stroke="#f0c030"
-          strokeWidth="2"
-          fill="none"
-          strokeDasharray="6 4"
-          opacity="0.75"
-        />
-      </svg>
     </div>
   );
 }
@@ -247,7 +216,7 @@ function QuoteBand({ active }: { active: boolean }) {
       ([e]) => {
         if (e.isIntersecting) setInView(true);
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -266,7 +235,7 @@ function QuoteBand({ active }: { active: boolean }) {
       />
       <div className="relative max-w-4xl mx-auto text-center">
         <p
-          className="text-[11px] font-bold tracking-[0.35em] uppercase mb-6"
+          className="text-[11px] font-bold uppercase mb-6"
           style={{
             color: active ? "#C4B5FD" : "#9ca3af",
             transition: "color .7s ease",
@@ -278,7 +247,7 @@ function QuoteBand({ active }: { active: boolean }) {
           className="text-2xl sm:text-3xl font-medium leading-tight mb-8"
           style={{
             fontFamily: "'Noto Kufi Arabic', sans-serif",
-            color: active ? "#ffffff" : "#0d1a3a",
+            color: active ? "#ffffff" : "#555",
             opacity: inView ? 1 : 0,
             transform: inView ? "none" : "translateY(28px)",
             transitionProperty: "color, opacity, transform",
@@ -286,38 +255,8 @@ function QuoteBand({ active }: { active: boolean }) {
             transitionDelay: "0s, .1s, .1s",
           }}
         >
-          {t("creative.quote")}{" "}
-          <span className="underline decoration-2 font-bold underline-offset-4 italic">
-            {t("creative.quote_word")}
-          </span>
-          .
+          {t("creative.quote")}
         </blockquote>
-        <div
-          style={{
-            opacity: inView ? 1 : 0,
-            transform: inView ? "none" : "translateY(16px)",
-            transition: "opacity .8s ease .45s, transform .8s ease .45s",
-          }}
-        >
-          <p
-            className="font-bold text-sm tracking-wide"
-            style={{
-              color: active ? "#ffffff" : "#0d1a3a",
-              transition: "color .7s ease",
-            }}
-          >
-            {t("creative.founder_name")}
-          </p>
-          <p
-            className="text-sm mt-1"
-            style={{
-              color: active ? "#C4B5FD" : "#6b7280",
-              transition: "color .7s ease",
-            }}
-          >
-            {t("creative.founder_title")}
-          </p>
-        </div>
       </div>
     </div>
   );
@@ -362,12 +301,12 @@ export default function CreativeSection() {
           }}
         />
 
-        <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-5 items-start">
           <CollageCard />
           <div className="flex flex-col gap-8 pt-2 lg:pt-4">
             <div>
               <p
-                className="text-[11px] font-bold tracking-[0.3em] uppercase mb-3"
+                className="text-[11px] font-bold mb-3"
                 style={{ color: badgeColor, transition: "color .7s ease" }}
               >
                 {t("creative.badge")}
@@ -381,14 +320,18 @@ export default function CreativeSection() {
                 }}
               >
                 {t("creative.title_1")}
-                <br />
-                {t("creative.title_2")}
               </h2>
               <p
                 className="text-base leading-relaxed max-w-md"
                 style={{ color: subTextColor, transition: "color .7s ease" }}
               >
-                {t("creative.description")}
+                {t("creative.description_1")}
+                <br />
+                {t("creative.description_2")}
+                <br />
+                {t("creative.description_3")}
+                <br />
+                {t("creative.description_4")}
               </p>
             </div>
             <PuzzleImage active={scrollDark} />

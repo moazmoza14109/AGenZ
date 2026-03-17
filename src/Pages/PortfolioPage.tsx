@@ -198,7 +198,7 @@ export default function PortfolioPage() {
           }`}
         >
           <p
-            className="text-xs font-bold tracking-[0.3em] uppercase mb-3 transition-colors duration-300"
+            className="text-xs font-bold  mb-3 transition-colors duration-300"
             style={{ color: brandSecondary }}
           >
             {t("portfolio.badge")}
@@ -351,7 +351,7 @@ export default function PortfolioPage() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-px" style={{ background: brandPrimary }} />
               <h3
-                className="text-xs font-bold tracking-[0.25em] uppercase"
+                className="text-xs font-bold uppercase"
                 style={{ color: brandPrimary }}
               >
                 {t("portfolio.section_photos")}
@@ -420,7 +420,7 @@ export default function PortfolioPage() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-px" style={{ background: brandPrimary }} />
               <p
-                className="text-xs font-bold tracking-[0.25em] uppercase"
+                className="text-xs font-bold uppercase"
                 style={{ color: brandPrimary }}
               >
                 {t("portfolio.section_videos")}
@@ -495,7 +495,7 @@ export default function PortfolioPage() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-px" style={{ background: brandPrimary }} />
               <h3
-                className="text-xs font-bold tracking-[0.25em] uppercase"
+                className="text-xs font-bold uppercase"
                 style={{ color: brandPrimary }}
               >
                 {t("portfolio.section_branding")}
@@ -563,7 +563,7 @@ export default function PortfolioPage() {
         >
           <div>
             <p
-              className="text-xs font-bold tracking-[0.3em] uppercase mb-2"
+              className="text-xs font-bold mb-2"
               style={{ color: brandSecondary }}
             >
               {t("portfolio.cta_badge")}

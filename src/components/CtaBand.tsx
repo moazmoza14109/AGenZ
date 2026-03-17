@@ -28,7 +28,7 @@ export default function CTABand() {
 
       {/* Content */}
       <div className="relative z-10 max-w-2xl mx-auto">
-        <p className="text-[11px] font-bold tracking-[0.3em] uppercase text-white/60 mb-4">
+        <p className="text-[11px] font-bold  text-white/60 mb-4">
           {t("cta_band.badge")}
         </p>
         <h2

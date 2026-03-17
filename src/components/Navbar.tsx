@@ -206,12 +206,11 @@ export default function Navbar() {
 
   const socialDefaultColor = isDark ? "#a78bfa" : "#3f0f8b";
   const socialHoverColor = isDark ? "#ffffff" : "#000000";
-
   useEffect(() => {
-    document.documentElement.dir = "rtl";
-    document.documentElement.lang = "ar";
-  }, []);
-
+    const dir = i18n.language === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `text-sm font-medium tracking-wide transition-colors duration-200 whitespace-nowrap ${
       isActive

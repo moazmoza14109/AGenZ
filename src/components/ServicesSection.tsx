@@ -54,7 +54,7 @@ export default function ServicesSection() {
           }`}
         >
           {/* ✅ badge */}
-          <p className="text-[11px] font-bold tracking-[0.3em] uppercase text-base-content/40 mb-4">
+          <p className="text-[11px] font-bold  text-base-content/40 mb-4">
             {t("services.badge")}
           </p>
 

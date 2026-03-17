@@ -62,7 +62,7 @@ export default function AboutPage() {
           }`}
         >
           {/* ✅ badge */}
-          <p className="text-center text-xs font-bold tracking-[0.3em] uppercase text-base-content/40 mb-4">
+          <p className="text-center text-xs font-bold text-base-content/40 mb-4">
             {t("about.badge")}
           </p>
           {/* ✅ عنوان */}
@@ -179,9 +179,7 @@ export default function AboutPage() {
 
           {/* Filter UI */}
           <div className="mt-16 mb-10">
-            <p className="text-center text-xs font-bold tracking-[0.25em] uppercase text-base-content/40 mb-5">
-              {t("about.filter.label") || "Filter by Category"}
-            </p>
+            
             {/* ✅ خلفية الـ filter container */}
             <div
               className="flex flex-wrap justify-center gap-2 px-2 py-3 rounded-2xl transition-colors duration-300"
@@ -342,7 +340,7 @@ export default function AboutPage() {
           >
             <div>
               <p
-                className="text-xs font-bold tracking-[0.3em] uppercase mb-2 transition-colors duration-300"
+                className="text-xs font-bold mb-2 transition-colors duration-300"
                 style={{ color: isDark ? "#a78bfa" : "#53178A" }}
               >
                 {t("about.cta_badge")}
