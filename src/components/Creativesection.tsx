@@ -306,7 +306,7 @@ export default function CreativeSection() {
           <div className="flex flex-col gap-8 pt-2 lg:pt-4">
             <div>
               <p
-                className="text-[11px] font-bold mb-3"
+                className="text-[18px] font-bold mb-3"
                 style={{ color: badgeColor, transition: "color .7s ease" }}
               >
                 {t("creative.badge")}
