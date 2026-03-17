@@ -62,60 +62,6 @@ function CollageCard() {
           pointerEvents: "none",
         }}
       />
-      <div
-        className="absolute"
-        style={{
-          top: "17%",
-          right: "9%",
-          animation: "float2 3.4s ease-in-out infinite",
-        }}
-      >
-        <div
-          className="rounded-xl w-20 h-14 flex items-center justify-center shadow-lg"
-          style={{ background: "#f0c030" }}
-        >
-          <svg viewBox="0 0 60 30" fill="none" className="w-10">
-            <path
-              d="M4 10Q14 2 24 10Q34 18 44 10Q50 6 56 10"
-              stroke="#111"
-              strokeWidth="3"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <path
-              d="M4 20Q14 12 24 20Q34 28 44 20"
-              stroke="#111"
-              strokeWidth="3"
-              fill="none"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
-      </div>
-      {/* <div
-        className="absolute"
-        style={{
-          top: "11%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          animation: "float3 5s ease-in-out infinite",
-        }}
-      >
-        <div className="bg-white rounded-xl px-3 py-2 shadow-lg flex items-center gap-2">
-          {[0, 1].map((i) => (
-            <div
-              key={i}
-              className="w-8 h-6 border-2 rounded-full flex items-center justify-center"
-              style={{ borderColor: "#3F0F8B" }}
-            >
-              <div
-                className="w-3 h-3 rounded-full"
-                style={{ background: "#3F0F8B" }}
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
 
       <div className="absolute" style={{ top: "29%", left: "6%" }}>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
